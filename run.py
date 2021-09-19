@@ -209,6 +209,8 @@ def computer_game_total():
     """
     Adds up the cumulative score or the computer
     """
+    computer_game_total = sum(computer_playing_cards)
+    return computer_game_total
 
 
 def end_game():
