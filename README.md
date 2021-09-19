@@ -54,6 +54,11 @@ This project will be a text-based python game where the user has to beat the com
 ## User Requirements and Expectations
 
 ### Requirements
+* Single page layout
+* Feedback on performance
+* Clear instruction as to when the game starts and finishes
+* Validation of user inputs
+* Feedback to the user on their input to the game
 
 ### Expectations
 
