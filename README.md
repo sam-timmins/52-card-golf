@@ -44,7 +44,12 @@ This project will be a text-based python game where the user has to beat the com
 * As a user, I want to skip through game instructions if required
 * As a user, I want to have continual feedback on my score
 * As a user, I want to know the outcome of the game
+
 ## Site owners Goals
+* Where there is lots of text, present it clearly
+* Give the user feedback on performance
+* Ensure that there is validation for expected answers on all user inputs
+* Create a gently flow of text so the user is able to keep up with reading it
 
 ## User Requirements and Expectations
 
