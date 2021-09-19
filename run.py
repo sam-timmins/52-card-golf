@@ -289,9 +289,38 @@ def end_game():
     """
     Gives final feedback of the game depending on the score
     """
+    user_score = user_game_total()
+    computer_score = computer_game_total()
+    print("Game over")
+    print()
+    delay_print("Totaling the scores...", 3)
+    delay_print("Ready in...", 2)
+    delay_print("3...", 1)
+    delay_print("2...", 1)
+    delay_print("1...", 1)
+    print()
+    delay_print(f"You're total was {user_score}", 2)
+    print()
+    delay_print(f"Computer's total was {computer_score}", 2)
+    print()
+    if user_score < computer_score:
+        delay_print("Great job, you're the winner!", 2)
+    elif user_score > computer_score:
+        delay_print("Unlucky, the computer wins!", 2)
+    else:
+        delay_print("It's a draw....", 2)
+    print()
+    delay_print("Have another game!", 2)
 
 
 def main():
     """
     The main game loop
     """
+    pre_game_username_and_rules()
+    user_game_total()
+    users_move()
+    computers_move()
+    end_game()
+
+main()
