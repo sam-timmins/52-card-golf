@@ -46,6 +46,9 @@ def format_card_to_int():
     Strips out the number from anything selected from the deck and
     converts the string to an integer
     """
+    global formatted_card
+    number_only = card_selection[1:]
+    formatted_card = int(number_only)
 
 
 def pre_game_username_and_rules():
