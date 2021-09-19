@@ -16,11 +16,11 @@ the_deck = [
     'C2',  'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11',
     'C12', 'C13'
     ]
-    
+
 
 def delay_print(text, delay):
     """
-    Delays the print statment
+    Delays the print statement
 
     Parameters:
         text (string) - text to be printed out
@@ -41,21 +41,20 @@ def format_card_to_int():
     """
     Creates a global variable formatted_card
     Strips out the number from anything selected from the deck and
-    converts the string to an integer 
+    converts the string to an integer
     """
 
 
 def pre_game_username_and_rules():
     """
-    Makes sure the user enters a value into the user name input, then asks
-    for the user to decide if they want to read the rules or not. If they do,
+    Makes sure the user enters a value into the user name input, then asks for the user to decide if they want to read the rules or not. If they do,
     it brings up the rules, if not then starts the game
     """
 
 
 def select_number_of_cards_for_game():
     """
-    Lets the user input how many cards they and computer will play with
+    Lets the user input how many cards they and the computer will play with
     during that game.
     Then calls the deal_cards function
     """
@@ -89,7 +88,7 @@ def computers_move():
 
 def swap_users_card():
     """
-    Swaps the user's card depending on their choice of game and then card
+    Swaps the user's card depending on their choice of game, then the card
     """
 
 
