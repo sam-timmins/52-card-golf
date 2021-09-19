@@ -136,7 +136,7 @@ def deal_cards():
         pick_card_from_deck()
         format_card_to_int()
         computer_playing_cards.append(formatted_card)
-    print()pass
+    print()
     delay_print(f"{user_name}, lets deal...", 2)
     print()
     delay_print(f"These are your cards.... {display_user_cards}", 2)
@@ -175,6 +175,19 @@ def computers_move():
     Picks and formats a card from the_deck. Changes the highest number in
     computer_playing_cards if the picked card is less than 7
     """
+    delay_print("Computer is thinking..", 2)
+    delay_print("Computer is thinking....", 2)
+    delay_print("Computer is thinking......", 2)
+    pick_card_from_deck()
+    format_card_to_int()
+    print()
+    computer_playing_cards.sort()
+    if formatted_card < computer_playing_cards[-1]:
+        computer_playing_cards[-1] = formatted_card
+    else:
+        formatted_card >= computer_playing_cards[-1]
+    delay_print("That's enough thinking!", 2)
+    print()
 
 
 def swap_users_card():
