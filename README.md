@@ -127,6 +127,9 @@ Once this was completed, I could focus on the game itself. I broke it down into 
 
 # Wireframes
 
+The game will be built using a pre-built template that Code Institute has provided. This template already scales down for different screen sizes so I have only produced a desktop wireframe that simply centres the content.
+
+[Desktop Wireframe](wireframes/desktop.jpg "Desktop")
 
 \
 &nbsp;
