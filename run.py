@@ -136,7 +136,7 @@ def deal_cards():
         pick_card_from_deck()
         format_card_to_int()
         computer_playing_cards.append(formatted_card)
-    print()
+    print()pass
     delay_print(f"{user_name}, lets deal...", 2)
     print()
     delay_print(f"These are your cards.... {display_user_cards}", 2)
@@ -145,9 +145,29 @@ def deal_cards():
 def users_move():
     """
     Picks a card from the deck, displays it and formats it to an integer
-    Invites the user to swap or pass. Swap leads to a move, pass give the
+    Invites the user to swap or pass. Swap leads to a move, pass gives the
     computer a move
     """
+    pick_card_from_deck()
+    format_card_to_int()
+    delay_print(f"The card picked is {card_selection}", 2)
+    print()
+    delay_print("What's your next move?", 1)
+    swap_or_not = input("'swap' or 'pass': ")
+    if swap_or_not.lower() == 'swap':
+        print()
+        delay_print("Which card would you like to swap?", 1)
+        print()
+        print("Please choose from:")
+        print("1 - your first card in the row")
+        print("2 - your second card in the row")
+        print("etc...")
+        print("etc...")
+        print()
+        swap_users_card()
+    elif swap_or_not.lower() == 'pass':
+        print()
+        return
 
 
 def computers_move():
