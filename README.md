@@ -61,7 +61,11 @@ This project will be a text-based python game where the user has to beat the com
 * Feedback to the user on their input to the game
 
 ### Expectations
-
+* I expect to know that it is my game based on a username
+* I expect to know when the game starts and finishes
+* I expect to have the option of reading the rules or not
+* I expect not to be able to make any typing errors
+* I expect feedback on performance
 
 \
 &nbsp;
