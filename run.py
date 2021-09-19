@@ -5,3 +5,7 @@
 import random
 import time
 
+
+def delay_print(text, delay):
+    print(text)
+    time.sleep(delay)
