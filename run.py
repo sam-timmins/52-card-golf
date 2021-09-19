@@ -194,7 +194,7 @@ def swap_users_card():
     """
     Swaps the user's card depending on their choice of game, then the card
     """
-        swap_card_number = 0
+    swap_card_number = 0
     print(display_user_cards)
     print()
     swap_card_number = input("Card number: ")
