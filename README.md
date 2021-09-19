@@ -38,7 +38,12 @@ This project will be a text-based python game where the user has to beat the com
 * Know the outcome of the game, win, lose or draw
 
 ## User Stories
-
+* As a user, I want to be able to personalise my game
+* As a user, I want to select a game type
+* As a user, I want to be clearly navigated through the game
+* As a user, I want to skip through game instructions if required
+* As a user, I want to have continual feedback on my score
+* As a user, I want to know the outcome of the game
 ## Site owners Goals
 
 ## User Requirements and Expectations
