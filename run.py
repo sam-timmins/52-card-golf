@@ -194,6 +194,78 @@ def swap_users_card():
     """
     Swaps the user's card depending on their choice of game, then the card
     """
+        swap_card_number = 0
+    print(display_user_cards)
+    print()
+    swap_card_number = input("Card number: ")
+    formatted_swap_card_number = int(swap_card_number)
+    if number_of_cards == 4:
+        if formatted_swap_card_number == 1:
+            user_playing_cards[0] = formatted_card
+            display_user_cards[0] = card_selection
+        elif formatted_swap_card_number == 2:
+            user_playing_cards[1] = formatted_card
+            display_user_cards[1] = card_selection
+        elif formatted_swap_card_number == 3:
+            user_playing_cards[2] = formatted_card
+            display_user_cards[2] = card_selection
+        elif formatted_swap_card_number == 4:
+            user_playing_cards[3] = formatted_card
+            display_user_cards[3] = card_selection
+        elif formatted_card != 1 or 2 or 3 or 4:
+            print("Please enter either a number between 1 and 4")
+            swap_card_number = input("Card number: ")
+    elif number_of_cards == 6:
+        if formatted_swap_card_number == 1:
+            user_playing_cards[0] = formatted_card
+            display_user_cards[0] = card_selection
+        elif formatted_swap_card_number == 2:
+            user_playing_cards[1] = formatted_card
+            display_user_cards[1] = card_selection
+        elif formatted_swap_card_number == 3:
+            user_playing_cards[2] = formatted_card
+            display_user_cards[2] = card_selection
+        elif formatted_swap_card_number == 4:
+            user_playing_cards[3] = formatted_card
+            display_user_cards[3] = card_selection
+        elif formatted_swap_card_number == 5:
+            user_playing_cards[4] = formatted_card
+            display_user_cards[4] = card_selection
+        elif formatted_swap_card_number == 6:
+            user_playing_cards[5] = formatted_card
+            display_user_cards[5] = card_selection
+        elif formatted_card != 1 or 2 or 3 or 4 or 5 or 6:
+            print("Please enter either a number between 1 and 6")
+            swap_card_number = input("Card number: ")
+    elif number_of_cards == 8:
+        if formatted_swap_card_number == 1:
+            user_playing_cards[0] = formatted_card
+            display_user_cards[0] = card_selection
+        elif formatted_swap_card_number == 2:
+            user_playing_cards[1] = formatted_card
+            display_user_cards[1] = card_selection
+        elif formatted_swap_card_number == 3:
+            user_playing_cards[2] = formatted_card
+            display_user_cards[2] = card_selection
+        elif formatted_swap_card_number == 4:
+            user_playing_cards[3] = formatted_card
+            display_user_cards[3] = card_selection
+        elif formatted_swap_card_number == 5:
+            user_playing_cards[4] = formatted_card
+            display_user_cards[4] = card_selection
+        elif formatted_swap_card_number == 6:
+            user_playing_cards[5] = formatted_card
+            display_user_cards[5] = card_selection
+        elif formatted_swap_card_number == 7:
+            user_playing_cards[6] = formatted_card
+            display_user_cards[6] = card_selection
+        elif formatted_swap_card_number == 8:
+            user_playing_cards[7] = formatted_card
+            display_user_cards[7] = card_selection
+        elif formatted_card != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8:
+            print("Please enter either a number between 1 and 8")
+            swap_card_number = input("Card number: ")
+    delay_print(f"You're game total is: {user_game_total()}", 2)
 
 
 def user_game_total():
