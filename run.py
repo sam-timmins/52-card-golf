@@ -35,6 +35,9 @@ def pick_card_from_deck():
     Creates a global variable card_selection
     Selects a random card from the deck and removes it from the deck
     """
+    global card_selection
+    card_selection = random.choice(the_deck)
+    the_deck.remove(card_selection)
 
 
 def format_card_to_int():
