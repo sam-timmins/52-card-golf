@@ -33,9 +33,9 @@ This project will be a text-based python game where the user has to beat the com
 ## User Goals
 * Selection of cards able to be played with
 * Continual score feedback throughout the game
-* Know when it is the user's go and not
+* Know when it is the users go and not
 * Clear instruction as to how to play the game
-* Know the outcome of the game, win, loose or draw
+* Know the outcome of the game, win, lose or draw
 
 ## User Stories
 
