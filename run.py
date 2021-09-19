@@ -93,10 +93,10 @@ def pre_game_username_and_rules():
         delay_print("Pick wisely, one card cannot be changed!!", 3)
         print()
         delay_print("", 3)
-        print("cards")
+        select_number_of_cards_for_game()
     elif read_rules.lower() == 'n' or read_rules.lower() == 'no':
         print()
-        print("cards")
+        select_number_of_cards_for_game()
     else:
         delay_print("Please enter a correct option...", 2)
         user_name = input('Please enter your name: ')
@@ -115,6 +115,7 @@ def select_number_of_cards_for_game():
     delay_print("Choices are 4, 6 or 8", 1)
     number_of_cards = int(input(""))
     deal_cards()
+
 
 def deal_cards():
     """
