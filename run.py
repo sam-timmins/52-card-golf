@@ -127,10 +127,10 @@ def deal_cards():
     Shows the user their cards for playing with
     """
     while len(user_playing_cards) < number_of_cards:
-    pick_card_from_deck()
-    display_user_cards.append(card_selection)
-    format_card_to_int()
-    user_playing_cards.append(formatted_card)
+        pick_card_from_deck()
+        display_user_cards.append(card_selection)
+        format_card_to_int()
+        user_playing_cards.append(formatted_card)
 
     while len(computer_playing_cards) < number_of_cards:
         pick_card_from_deck()
