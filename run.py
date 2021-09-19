@@ -7,5 +7,15 @@ import time
 
 
 def delay_print(text, delay):
+    """
+    Delays the print statment
+
+    Parameters:
+        text (string) - text to be printed out
+        delay (integer) - the number of seconds to delay by 
+    """
     print(text)
     time.sleep(delay)
+
+
+
