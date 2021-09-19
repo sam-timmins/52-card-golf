@@ -200,6 +200,9 @@ def user_game_total():
     """
     Adds up the cumulative score or the user
     """
+    user_game_total = sum(user_playing_cards)
+    print()
+    return user_game_total
 
 
 def computer_game_total():
