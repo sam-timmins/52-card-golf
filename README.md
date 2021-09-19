@@ -73,13 +73,51 @@ This project will be a text-based python game where the user has to beat the com
 \
 &nbsp;
 
+## How to Play
+
+* A standard 52 pack of cards is used
+    * Ace is 1
+    * Jack is 11
+    * Queen is 12
+    * King is 13
+* The user will decide how many cards to be delt (4, 6 or 8)
+    * 4 cards selected will play 3 rounds
+    * 6 cards selected will play 5 rounds
+    * 8 cards selected will play 7 rounds
+* The computer will randomly deal then turn the top card of the deck and display it
+* The user can elect to swap it for one of their own cards or pass
+* After the rounds are completed the game ends
+* The winner will have the lowest cumulative score
+
 ## Design Choices
 ### Font
 ### Colours
 ### Images
 
 ### Structure
+The structure of this project has been mapped out using [Lucid](https://lucid.co/ "Lucid"). Using the preformed shapes in [Lucid](https://lucid.co/ "Lucid"), I created my key of shapes.
 
+\
+&nbsp;
+![Begining of game flow](wireframes/flow-key.jpg)
+\
+&nbsp;
+
+This then allowed me to walk through the project in my head and work out the links between different parts of the game and then changes depending on user input. I began by working out the flow of the beginning of the game, where the user enters the username and makes a decision on reading the rules, this then dictates their pathway to playing the game.
+
+\
+&nbsp;
+![Begining of game flow](wireframes/begining-of-game-flow-chart.jpg)
+\
+&nbsp;
+
+Once this was completed, I could focus on the game itself. I broke it down into every step I imagined that would be taken to navigate through the game. 
+
+\
+&nbsp;
+![Begining of game flow](wireframes/game-flow-chart.jpg)
+\
+&nbsp;
 
 \
 &nbsp;
