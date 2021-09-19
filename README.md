@@ -1,7 +1,7 @@
 # 52 Card Golf
 
 # Goal for this Project
-
+This project will be a text-based python game where the user has to beat the computer using a little skill but an extraordinary amount of pure luck!! For the user to win the game, they must tactfully swap their cards to create a cumulative score that is lower than the computer.
 
 # Table of Contents
 * [UX](#ux "UX")
