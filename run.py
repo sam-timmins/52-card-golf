@@ -126,6 +126,20 @@ def deal_cards():
     Creates a display friendly list of cards for the user (display_user_cards)
     Shows the user their cards for playing with
     """
+    while len(user_playing_cards) < number_of_cards:
+    pick_card_from_deck()
+    display_user_cards.append(card_selection)
+    format_card_to_int()
+    user_playing_cards.append(formatted_card)
+
+    while len(computer_playing_cards) < number_of_cards:
+        pick_card_from_deck()
+        format_card_to_int()
+        computer_playing_cards.append(formatted_card)
+    print()
+    delay_print(f"{user_name}, lets deal...", 2)
+    print()
+    delay_print(f"These are your cards.... {display_user_cards}", 2)
 
 
 def users_move():
