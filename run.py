@@ -267,6 +267,7 @@ def swap_users_card():
             print("Please enter either a number between 1 and 8")
             swap_card_number = input("Card number: ")
     delay_print(f"You're game total is: {user_game_total()}", 2)
+    print()
 
 
 def user_game_total():
