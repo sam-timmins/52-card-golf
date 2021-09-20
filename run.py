@@ -212,15 +212,23 @@ def swap_users_card():
     if number_of_cards == 4:
         if formatted_swap_card_number == 1:
             user_playing_cards[0] = formatted_card
+            print()
+            delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
             display_user_cards[0] = card_selection
         elif formatted_swap_card_number == 2:
             user_playing_cards[1] = formatted_card
+            print()
+            delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
             display_user_cards[1] = card_selection
         elif formatted_swap_card_number == 3:
             user_playing_cards[2] = formatted_card
+            print()
+            delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
             display_user_cards[2] = card_selection
         elif formatted_swap_card_number == 4:
             user_playing_cards[3] = formatted_card
+            print()
+            delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
             display_user_cards[3] = card_selection
         elif formatted_card != 1 or 2 or 3 or 4:
             print("Please enter either a number between 1 and 4")
