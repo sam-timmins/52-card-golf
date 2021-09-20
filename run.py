@@ -140,6 +140,7 @@ def deal_cards():
     delay_print(f"{user_name}, lets deal...", 2)
     print()
     delay_print(f"These are your cards.... {display_user_cards}", 2)
+    delay_print(f"You're game total is: {user_game_total()}", 2)
 
 
 def users_move():
