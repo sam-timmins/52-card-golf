@@ -1,4 +1,4 @@
-
+import time
 
 def delay_print(text, delay):
     """
