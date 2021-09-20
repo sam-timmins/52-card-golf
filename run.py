@@ -9,6 +9,13 @@ from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck
 
 
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+
 def pick_card_from_deck():
     """
     Creates a global variable card_selection
