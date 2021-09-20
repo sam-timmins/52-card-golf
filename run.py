@@ -3,7 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
-import time
+from utils import delay_print
 
 user_playing_cards = []
 computer_playing_cards = []
