@@ -168,11 +168,11 @@ def users_move():
         print()
         delay_print("Which card would you like to swap?", 1)
         print()
-        print("Please choose from:")
-        print("1 - your first card in the row")
-        print("2 - your second card in the row")
-        print("etc...")
-        print("etc...")
+        delay_print("Please choose from:", 2)
+        delay_print("1 - your first card in the row", 2)
+        delay_print("2 - your second card in the row", 2)
+        delay_print("etc...", 2)
+
         print()
         swap_users_card()
     elif swap_or_not.lower() == 'pass':
