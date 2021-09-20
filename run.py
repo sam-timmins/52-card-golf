@@ -187,7 +187,7 @@ def computers_move():
         computer_playing_cards[-1] = formatted_card
     else:
         formatted_card >= computer_playing_cards[-1]
-    delay_print("That's enough thinking!", 2)
+    delay_print("The computer has completed it's move..", 2)
     print()
 
 
