@@ -70,7 +70,7 @@ def pre_game_username_and_rules():
     user_name = input('Please enter your name: ')
     print()
     while (len(user_name)) == 0:
-        user_name = input('Please enter your name: ')
+        user_name = input('Please enter your name: \n')
     read_rules = input(f'Hi {user_name}, would you like to read the rules of '
                        'the game?\nyes or no: ')
     if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
@@ -108,7 +108,7 @@ def pre_game_username_and_rules():
         select_number_of_cards_for_game()
     else:
         delay_print("Please enter a correct option...", 2)
-        user_name = input('Please enter your name: ')
+        user_name = input('Please enter your name: \n')
 
 
 def select_number_of_cards_for_game():
@@ -122,7 +122,7 @@ def select_number_of_cards_for_game():
     print()
     delay_print("Pick the number of cards you would like...", 0)
     delay_print("Choices are 4, 6 or 8", 1)
-    number_of_cards = int(input(""))
+    number_of_cards = int(input("\n"))
     deal_cards()
 
 
@@ -163,7 +163,7 @@ def users_move():
     delay_print(f"The top card picked from the deck is {card_selection}", 2)
     print()
     delay_print("What's your next move?", 1)
-    swap_or_not = input("'swap' or 'pass': ")
+    swap_or_not = input("'swap' or 'pass': \n")
     if swap_or_not.lower() == 'swap':
         print()
         delay_print("Which card would you like to swap?", 1)
@@ -207,7 +207,7 @@ def swap_users_card():
     swap_card_number = 0
     print(display_user_cards)
     print()
-    swap_card_number = input("Card number: ")
+    swap_card_number = input("Card number: \n")
     formatted_swap_card_number = int(swap_card_number)
     if number_of_cards == 4:
         if formatted_swap_card_number == 1:
