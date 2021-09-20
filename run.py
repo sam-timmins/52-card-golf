@@ -317,10 +317,25 @@ def main():
     """
     The main game loop
     """
+    rounds = 0
     pre_game_username_and_rules()
     user_game_total()
-    users_move()
-    computers_move()
+    if number_of_cards == 4:
+        while rounds < 3:
+            rounds += 1
+            users_move()
+            computers_move()
+    elif number_of_cards == 6:
+        while rounds < 5:
+            rounds += 1
+            users_move()
+            computers_move()
+    elif number_of_cards == 8:
+        while rounds < 7:
+            rounds += 1
+            users_move()
+            computers_move()
     end_game()
+
 
 main()
