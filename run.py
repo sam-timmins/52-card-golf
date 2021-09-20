@@ -65,7 +65,7 @@ def pre_game_username_and_rules():
         |___ \  / /  | |    / _` | '__/ _` | | | |_ |/ _ \| |  _|
          ___) |/ /_  | |___| (_| | | | (_| | | |__| | (_) | | |
         |____/|____|  \_____\__,_|_|  \__,_|  \_____|\___/|_|_|
-        
+
          """)
     user_name = input('Please enter your name: ')
     print()
@@ -302,8 +302,17 @@ def end_game():
     """
     user_score = user_game_total()
     computer_score = computer_game_total()
-    print("Game over")
-    print()
+    delay_print("", 2)
+    print("""
+           _____                         ____
+          / ____|                       / __ \ 
+         | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
+         | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
+         | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
+          \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
+
+
+          """)
     delay_print("Totaling the scores...", 3)
     delay_print("Ready in...", 2)
     delay_print("3...", 1)
