@@ -378,21 +378,21 @@ def main():
     user_game_total()
     if number_of_cards == 4:
         while rounds < 4:
-            delay_print(f"Round: {rounds}", 2)
+            delay_print(f"Round: {rounds} of 3", 2)
             print()
             rounds += 1
             users_move()
             computers_move()
     elif number_of_cards == 6:
         while rounds < 6:
-            delay_print(f"Round: {rounds}", 2)
+            delay_print(f"Round: {rounds} of 5", 2)
             print()
             rounds += 1
             users_move()
             computers_move()
     elif number_of_cards == 8:
         while rounds < 8:
-            delay_print(f"Round: {rounds}", 2)
+            delay_print(f"Round: {rounds} of 7", 2)
             print()
             rounds += 1
             users_move()
