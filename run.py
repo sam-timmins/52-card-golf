@@ -1,7 +1,8 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-
+import gspread
+from google.oauth2.servcice_account import Credentials
 import random
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
