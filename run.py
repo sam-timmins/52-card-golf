@@ -151,7 +151,7 @@ def users_move():
     """
     pick_card_from_deck()
     format_card_to_int()
-    delay_print(f"The card picked is {card_selection}", 2)
+    delay_print(f"The top card picked from the deck is {card_selection}", 2)
     print()
     delay_print("What's your next move?", 1)
     swap_or_not = input("'swap' or 'pass': ")
@@ -324,16 +324,22 @@ def main():
     user_game_total()
     if number_of_cards == 4:
         while rounds < 3:
+            print(f"Round: {rounds}")
+            print()
             rounds += 1
             users_move()
             computers_move()
     elif number_of_cards == 6:
         while rounds < 5:
+            print(f"Round: {rounds}")
+            print()
             rounds += 1
             users_move()
             computers_move()
     elif number_of_cards == 8:
         while rounds < 7:
+            print(f"Round: {rounds}")
+            print()
             rounds += 1
             users_move()
             computers_move()
