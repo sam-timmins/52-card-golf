@@ -14,6 +14,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
     ]
+CREDS = Credentials.from_service_account_file('creds.json')
 
 
 def pick_card_from_deck():
