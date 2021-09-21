@@ -52,3 +52,10 @@ def logo():
          ___) |/ /_  | |___| (_| | | | (_| | | |__| | (_) | | |
         |____/|____|  \_____\__,_|_|  \__,_|  \_____|\___/|_|_|
          """)
+
+
+def computers_move_text():
+    delay_print("Computer is thinking..", 2)
+    delay_print("Computer is thinking....", 2)
+    delay_print("Computer is thinking......\n", 2)
+    delay_print("The computer has completed it's move..", 2)
