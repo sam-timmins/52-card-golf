@@ -77,4 +77,3 @@ def game_over_text():
     delay_print("2...", 1)
     delay_print("1...", 1)
     print()
-
