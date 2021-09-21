@@ -108,14 +108,7 @@ def users_move():
     swap_or_not = input("'swap' or 'pass': \n")
     if swap_or_not.lower() == 'swap':
         print()
-        delay_print("Which card would you like to swap?", 1)
-        print()
-        delay_print("Please choose from:", 2)
-        delay_print("1 - your first card in the row", 2)
-        delay_print("2 - your second card in the row", 2)
-        delay_print("etc...", 2)
-
-        print()
+        delay_print("Which card would you like to swap?\n", 1)
         swap_users_card()
     elif swap_or_not.lower() == 'pass':
         print()
