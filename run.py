@@ -6,7 +6,7 @@ from google.oauth2.service_account import Credentials
 import random
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
-    display_user_cards, the_deck
+    display_user_cards, the_deck, game_rules
 
 
 SCOPE = [
@@ -64,33 +64,7 @@ def pre_game_username_and_rules():
                        'the game?\nyes or no: ')
     if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
         print()
-        delay_print("A game of skill and pure luck!!", 3)
-        delay_print("The winner will have the lowest cumulative score", 1)
-        delay_print("at the end of the game.", 3)
-        delay_print("We use a standard 52-card pack.", 3)
-        delay_print("You will be asked how many cards you would like to "
-                    "play.", 3)
-        delay_print("4 cards selected will play 3 rounds", 3)
-        delay_print("6 cards selected will play 5 rounds", 3)
-        delay_print("8 cards selected will play 7 rounds", 3)
-        delay_print("The computer will randomly deal.", 3)
-        delay_print("Your cards will be shown to you at the start.", 3)
-        delay_print("They will be displayed as ['D9', 'S9', 'C2', 'H1']", 3)
-        delay_print("The first letter describes the suit...", 3)
-        delay_print("H - Hearts, D - Diamonds, S - Spades and C - Clubs", 3)
-        delay_print("The number then is the value...", 3)
-        delay_print("Ace is 1, Jack is 11, Queen is 12 and King is 13", 4)
-        delay_print("The computer will pick the top card from the deck", 1)
-        delay_print("and show it to you", 3)
-        delay_print("You then get the option to 'swap' or 'pass'", 3)
-        delay_print("If it is lower than one that you have you can 'swap'", 3)
-        delay_print("it with one of yours", 3)
-        delay_print("Choosing 'pass' ends your turn and gives the computer a "
-                    "go", 3)
-        print()
-        delay_print("Pick wisely, one card cannot be changed!!", 3)
-        print()
-        delay_print("", 3)
+        game_rules()
         select_number_of_cards_for_game()
     elif read_rules.lower() == 'n' or read_rules.lower() == 'no':
         print()
