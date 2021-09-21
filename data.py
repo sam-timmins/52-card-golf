@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from utils import delay_print
+from run import user_game_total, user_name
 
 user_playing_cards = []
 computer_playing_cards = []
