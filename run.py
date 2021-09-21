@@ -4,9 +4,9 @@
 
 import random
 from utils import delay_print
-from data import SHEET, user_playing_cards, computer_playing_cards, \
+from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, select_number_of_cards_for_game_text
+    game_over_text, SHEET, select_number_of_cards_for_game_text
 
 
 def pick_card_from_deck():

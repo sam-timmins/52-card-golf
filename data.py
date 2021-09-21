@@ -1,7 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from utils import delay_print
-from run import user_game_total, user_name
 
 user_playing_cards = []
 computer_playing_cards = []
@@ -70,14 +69,6 @@ def select_number_of_cards_for_game_text():
     delay_print("Here we go...../n", 2)
     delay_print("Pick the number of cards you would like...", 0)
     delay_print("Choices are 4, 6 or 8", 1)
-
-
-def deal_cards_text():
-    print()
-    delay_print(f"{user_name}, lets deal...", 2)
-    print()
-    delay_print(f"These are your cards.... {display_user_cards}", 2)
-    delay_print(f"You're game total is: {user_game_total()}", 2)
 
 
 def computers_move_text():
