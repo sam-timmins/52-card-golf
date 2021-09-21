@@ -148,30 +148,29 @@ def swap_users_card():
     print(display_user_cards)
     print()
     swap_card_number = int(input("Card number: \n"))
-    if number_of_cards == 4:
-        if swap_card_number == 1:
-            user_playing_cards[0] = formatted_card
-            print()
-            delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
-            display_user_cards[0] = card_selection
-        elif swap_card_number == 2:
-            user_playing_cards[1] = formatted_card
-            print()
-            delay_print(f"Swapping {display_user_cards[1]} for {card_selection}", 2)
-            display_user_cards[1] = card_selection
-        elif swap_card_number == 3:
-            user_playing_cards[2] = formatted_card
-            print()
-            delay_print(f"Swapping {display_user_cards[2]} for {card_selection}", 2)
-            display_user_cards[2] = card_selection
-        elif swap_card_number == 4:
-            user_playing_cards[3] = formatted_card
-            print()
-            delay_print(f"Swapping {display_user_cards[3]} for {card_selection}", 2)
-            display_user_cards[3] = card_selection
-        elif formatted_card != 1 or 2 or 3 or 4:
-            print("Please enter either a number between 1 and 4")
-            swap_card_number = input("Card number: \n")
+    if swap_card_number == 1:
+        user_playing_cards[0] = formatted_card
+        print()
+        delay_print(f"Swapping {display_user_cards[0]} for {card_selection}", 2)
+        display_user_cards[0] = card_selection
+    elif swap_card_number == 2:
+        user_playing_cards[1] = formatted_card
+        print()
+        delay_print(f"Swapping {display_user_cards[1]} for {card_selection}", 2)
+        display_user_cards[1] = card_selection
+    elif swap_card_number == 3:
+        user_playing_cards[2] = formatted_card
+        print()
+        delay_print(f"Swapping {display_user_cards[2]} for {card_selection}", 2)
+        display_user_cards[2] = card_selection
+    elif swap_card_number == 4:
+        user_playing_cards[3] = formatted_card
+        print()
+        delay_print(f"Swapping {display_user_cards[3]} for {card_selection}", 2)
+        display_user_cards[3] = card_selection
+    elif formatted_card != 1 or 2 or 3 or 4:
+        print(f"Please enter either a number between 1 and {number_of_cards}")
+        swap_card_number = input("Card number: \n")
     elif number_of_cards == 6:
         if swap_card_number == 1:
             user_playing_cards[0] = formatted_card

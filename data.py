@@ -65,6 +65,12 @@ def logo():
          """)
 
 
+def select_number_of_cards_for_game_text():
+    delay_print("Here we go...../n", 2)
+    delay_print("Pick the number of cards you would like...", 0)
+    delay_print("Choices are 4, 6 or 8", 1)
+
+
 def computers_move_text():
     delay_print("Computer is thinking..", 2)
     delay_print("Computer is thinking....", 2)
