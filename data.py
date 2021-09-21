@@ -71,6 +71,14 @@ def select_number_of_cards_for_game_text():
     delay_print("Choices are 4, 6 or 8", 1)
 
 
+def deal_cards_text():
+    print()
+    delay_print(f"{user_name}, lets deal...", 2)
+    print()
+    delay_print(f"These are your cards.... {display_user_cards}", 2)
+    delay_print(f"You're game total is: {user_game_total()}", 2)
+
+
 def computers_move_text():
     delay_print("Computer is thinking..", 2)
     delay_print("Computer is thinking....", 2)
