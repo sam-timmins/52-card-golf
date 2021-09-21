@@ -288,6 +288,7 @@ def end_game():
     """
     Gives final feedback of the game depending on the score
     """
+    global user_score
     user_score = user_game_total()
     computer_score = computer_game_total()
     game_over_text()

@@ -77,3 +77,10 @@ def game_over_text():
     delay_print("2...", 1)
     delay_print("1...", 1)
     print()
+
+
+def data(cards, user, scores):
+    cards = number_of_cards
+    user = user_name
+    scores = user_score
+    return [user, cards, scores]
