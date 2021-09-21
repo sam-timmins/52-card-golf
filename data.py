@@ -1,5 +1,3 @@
-import gspread
-from google.oauth2.service_account import Credentials
 from utils import delay_print
 
 user_playing_cards = []
@@ -13,15 +11,6 @@ the_deck = [
     'C2',  'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11',
     'C12', 'C13'
     ]
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('52-card-golf')
 
 
 def game_rules():
