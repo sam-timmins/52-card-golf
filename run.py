@@ -313,6 +313,16 @@ def data(user, cards, scores):
     return [user, cards, scores]
 
 
+def update_worksheet(data):
+    """
+    Adds the game data to google sheets
+    Parameters:
+        data (list)
+    """
+    worksheet = SHEET.worksheet('high-scores')
+    worksheet.append_row(data)
+
+
 def main():
     """
     The main game loop
