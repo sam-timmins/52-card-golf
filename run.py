@@ -48,14 +48,7 @@ def pre_game_username_and_rules():
     it brings up the rules, if not then starts the game
     """
     global user_name
-    print("""
-         _____ ___     _____              _    _____       _  __
-        | ____|__ \   / ____|            | |  / ____|     | |/ _|
-        | |__    ) | | |     __ _ _ __ __| | | |  __  ___ | | |_
-        |___ \  / /  | |    / _` | '__/ _` | | | |_ |/ _ \| |  _|
-         ___) |/ /_  | |___| (_| | | | (_| | | |__| | (_) | | |
-        |____/|____|  \_____\__,_|_|  \__,_|  \_____|\___/|_|_|
-         """)
+    logo()
     user_name = input('Please enter your name: ')
     print()
     while (len(user_name)) == 0:
