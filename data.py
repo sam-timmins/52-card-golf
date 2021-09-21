@@ -1,4 +1,5 @@
 from utils import delay_print
+from run import number_of_cards, user_name, user_score
 
 user_playing_cards = []
 computer_playing_cards = []
