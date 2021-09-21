@@ -141,10 +141,20 @@ def swap_users_card():
     """
     Swaps the user's card depending on their choice of game, then the card
     """
-    swap_card_number = 0
     print(display_user_cards)
     print()
-    swap_card_number = int(input("Card number: \n"))
+    swap_card_number = input("Card number: \n")
+    for card in display_user_cards:
+        if card == swap_card_number:
+            delay_print(f"Swapping {swap_card_number} for {card_selection}", 2)
+            display_user_cards.remove(swap_card_number)
+            display_user_cards.insert(0, card_selection)
+            user_playing_cards.clear()
+    for i in display_user_cards:
+        user_playing_cards.append(int(i[1:]))
+    delay_print(f"You're game total is: {user_game_total()}", 2)
+    print()
+"""
     if swap_card_number == 1:
         user_playing_cards[0] = formatted_card
         print()
@@ -246,8 +256,7 @@ def swap_users_card():
         elif formatted_card != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8:
             print("Please enter either a number between 1 and 8")
             swap_card_number = input("Card number: \n")
-    delay_print(f"You're game total is: {user_game_total()}", 2)
-    print()
+    """
 
 
 def user_game_total():
