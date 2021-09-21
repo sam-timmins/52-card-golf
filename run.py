@@ -6,7 +6,7 @@ from google.oauth2.service_account import Credentials
 import random
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
-    display_user_cards, the_deck, game_rules
+    display_user_cards, the_deck, game_rules, logo
 
 
 SCOPE = [
