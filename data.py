@@ -1,5 +1,4 @@
 from utils import delay_print
-from run import number_of_cards, user_name, user_score
 
 user_playing_cards = []
 computer_playing_cards = []
@@ -79,9 +78,3 @@ def game_over_text():
     delay_print("1...", 1)
     print()
 
-
-def data(cards, user, scores):
-    cards = number_of_cards
-    user = user_name
-    scores = user_score
-    return [user, cards, scores]

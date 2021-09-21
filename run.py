@@ -7,7 +7,7 @@ import random
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, data
+    game_over_text
 
 
 SCOPE = [
@@ -306,6 +306,13 @@ def end_game():
     delay_print("Have another game!", 2)
 
 
+def data(user, cards, scores):
+    cards = number_of_cards
+    user = user_name
+    scores = user_score
+    return [user, cards, scores]
+
+
 def main():
     """
     The main game loop
@@ -337,4 +344,4 @@ def main():
     end_game()
 
 
-main()
+user()
