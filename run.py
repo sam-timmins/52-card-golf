@@ -359,6 +359,7 @@ def main():
             users_move()
             computers_move()
     end_game()
+    update_worksheet(data(user_name, number_of_cards, user_score))
 
 
-user()
+main()
