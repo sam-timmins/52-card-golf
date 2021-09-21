@@ -307,6 +307,13 @@ def end_game():
 
 
 def data(user, cards, scores):
+    """
+    Collects the game data
+    Parameters:
+        user (string) - Collected from the variable user_name
+        cards (int) - Collected from the variable number_of_cards
+        scores (int) - Collected from the variable user_score
+    """
     cards = number_of_cards
     user = user_name
     scores = user_score
