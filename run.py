@@ -325,27 +325,13 @@ def main():
     rounds = 1
     pre_game_username_and_rules()
     user_game_total()
-    if number_of_cards == 4:
-        while rounds < 4:
-            delay_print(f"Round: {rounds} of 3", 2)
-            print()
-            rounds += 1
-            users_move()
-            computers_move()
-    elif number_of_cards == 6:
-        while rounds < 6:
-            delay_print(f"Round: {rounds} of 5", 2)
-            print()
-            rounds += 1
-            users_move()
-            computers_move()
-    elif number_of_cards == 8:
-        while rounds < 8:
-            delay_print(f"Round: {rounds} of 7", 2)
-            print()
-            rounds += 1
-            users_move()
-            computers_move()
+    number_of_rounds = number_of_cards - 1
+    while rounds < number_of_rounds + 1:
+        delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
+        print()
+        rounds += 1
+        users_move()
+        computers_move()
     end_game()
     update_worksheet(data(user_name, number_of_cards, user_score))
 
