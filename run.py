@@ -154,7 +154,7 @@ def swap_users_card():
             delay_print(f"Swapping {swap_card_number} for {card_selection}", 2)
             display_user_cards.remove(swap_card_number)
             display_user_cards.insert(0, card_selection)
-            user_playing_cards.clear()
+    user_playing_cards.clear()
     for i in display_user_cards:
         user_playing_cards.append(int(i[1:]))
     delay_print(f"You're game total is: {user_game_total()}", 2)
