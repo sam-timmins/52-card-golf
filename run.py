@@ -51,6 +51,7 @@ def pre_game_username_and_rules():
     global user_name
     logo()
     user_name = input('Please enter your name: ')
+    user_name = user_name.strip()
     print()
     while (len(user_name)) == 0:
         user_name = input('Please enter your name: \n')
