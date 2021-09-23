@@ -41,7 +41,7 @@ def format_card_to_int():
     formatted_card = int(number_only)
 
 
-def pre_game_username_and_rules():
+def pre_game_username():
     """
     Makes sure the user enters a value into the user name input, then asks for
     the user to decide if they want to read the rules or not. If they do,
