@@ -237,7 +237,7 @@ def main():
     The main game loop
     """
     rounds = 1
-    pre_game_username_and_rules()
+    pre_game_username()
     user_game_total()
     number_of_rounds = number_of_cards - 1
     while rounds < number_of_rounds + 1:
