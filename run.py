@@ -54,6 +54,7 @@ def pre_game_username():
     print()
     while (len(user_name)) == 0:
         user_name = input('Please enter your name: \n')
+    read_rules()
     
 
 
@@ -61,6 +62,7 @@ def read_rules():
     """
     Either displays the rules or skips to select_number_of_cards_for_game()
     """
+    global user_name
     read_rules = input(f'Hi {user_name}, would you like to read the rules of '
                        'the game?\nyes or no: ')
     if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
