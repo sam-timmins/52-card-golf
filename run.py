@@ -52,16 +52,19 @@ def read_rules():
     global user_name
     read_rules = input(f'Hi {user_name}, would you like to read the rules of '
                        'the game?\nyes or no: ')
-    if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
-        print()
-        game_rules()
-        select_number_of_cards_for_game()
-    elif read_rules.lower() == 'n' or read_rules.lower() == 'no':
-        print()
-        select_number_of_cards_for_game()
-    else:
-        delay_print("Please enter a correct option...", 2)
-        user_name = input('Please enter your name: \n')
+    while True:
+        if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
+            print()
+            game_rules()
+            select_number_of_cards_for_game()
+            break
+        elif read_rules.lower() == 'n' or read_rules.lower() == 'no':
+            print()
+            select_number_of_cards_for_game()
+            break
+        else:
+            delay_print("Please enter a correct option...", 0)
+            read_rules = input('yes or no: \n')
 
 
 
