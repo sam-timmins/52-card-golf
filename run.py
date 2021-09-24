@@ -133,6 +133,7 @@ def users_move():
             print()
             delay_print("Which card would you like to swap?\n", 1)
             swap_users_card()
+            return
         elif swap_or_not.lower() == 'pass':
             print()
             return
