@@ -128,14 +128,16 @@ def users_move():
     print()
     delay_print("What's your next move?", 1)
     swap_or_not = input("'swap' or 'pass': \n")
-    if swap_or_not.lower() == 'swap':
-        print()
-        delay_print("Which card would you like to swap?\n", 1)
-        swap_users_card()
-    elif swap_or_not.lower() == 'pass':
-        print()
-        return
-
+    while True:
+        if swap_or_not.lower() == 'swap':
+            print()
+            delay_print("Which card would you like to swap?\n", 1)
+            swap_users_card()
+        elif swap_or_not.lower() == 'pass':
+            print()
+            return
+        else:
+            swap_or_not = input("Please enter 'swap' or 'pass':")
 
 def computers_move():
     """
