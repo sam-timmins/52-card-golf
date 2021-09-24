@@ -263,7 +263,11 @@ def show_game_score_history():
     convert_to_num = [int(i) for i in num_only]
     average = sum(convert_to_num) / len(convert_to_num)
 
-    print(f"The average number of cards played with is {int(average)}")
+    mode_card = statistics.mode(convert_to_num)
+
+    delay_print(f"The average number of cards played with is {int(average)}", 2)
+    print("")
+    delay_print(f"The most common number of cards played with is {mode_card}", 2)
     print("")
     delay_print("___________________________", 2)
 
