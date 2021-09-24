@@ -71,7 +71,7 @@ def select_number_of_cards_for_game_text():
     delay_print("Here we go.....", 2)
     print()
     delay_print("Pick the number of cards you would like...", 0)
-    delay_print("Choices are 4, 6 or 8", 1)
+    delay_print("Must be between 3 and 10 inclusive", 0)
 
 
 def computers_move_text():
