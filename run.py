@@ -236,7 +236,7 @@ def update_worksheet(data):
     Parameters:
         data (list)
     """
-    worksheet = SHEET.worksheet('high-scores')
+    worksheet = SHEET.worksheet('high_scores')
     worksheet.append_row(data)
 
 
