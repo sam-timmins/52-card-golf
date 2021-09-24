@@ -36,6 +36,7 @@ def pre_game_username():
     """
     global user_name
     logo()
+    show_game_score_history()
     user_name = input('Please enter your name: ')
     user_name = user_name.strip()
     print()
@@ -250,7 +251,7 @@ def show_game_score_history():
     print(f"The last player was {last_player[0]}.")
     print(f"They played with {last_player[1]} cards and scored {last_player[2]} points")
     print("Try and beat their score...")
-    
+
     number_of_cards_played_list = []
     for data in score_data:
         number_of_cards_played_list.append(data[1])
