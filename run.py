@@ -165,9 +165,9 @@ def swap_users_card():
     print()
     swap_card_number = input("Card number: \n")
     while swap_card_number:
-        if swap_card_number in display_user_cards:
-            delay_print(f"Swapping {swap_card_number} for {card_selection}", 2)
-            display_user_cards.remove(swap_card_number)
+        if swap_card_number.upper() in display_user_cards:
+            delay_print(f"Swapping {swap_card_number.upper()} for {card_selection}", 2)
+            display_user_cards.remove(swap_card_number.upper())
             display_user_cards.insert(0, card_selection)
             break
         else:
