@@ -37,6 +37,7 @@ def pre_game_username():
     global user_name
     logo()
     show_game_score_history()
+
     user_name = input('Please enter your name: ')
     user_name = user_name.strip()
     print()
@@ -261,7 +262,8 @@ def show_game_score_history():
     convert_to_num = [int(i) for i in num_only]
     average = sum(convert_to_num) / len(convert_to_num)
     print(f"The most popular number of cards played with is {int(average)}")
-    delay_print("", 2)
+    print("")
+    delay_print("___________________________", 2)
 
 
 def main():
