@@ -161,21 +161,13 @@ def swap_users_card():
     print(display_user_cards)
     print()
     swap_card_number = input("Card number: \n")
-    while True:
-        try:
-            for i in display_user_cards:
-                if i != swap_card_number:
-                    print("Not an option")
-                    swap_card_number = input("Card number: \n")
-                    break
-                else:
-                    for card in display_user_cards:
-                        if card == swap_card_number:
-                            delay_print(f"Swapping {swap_card_number} for {card_selection}", 2)
-                            display_user_cards.remove(swap_card_number)
-                            display_user_cards.insert(0, card_selection)
-        except:
-            print("Please enter a correct card number")
+    while swap_card_number:
+        if swap_card_number in display_user_cards:
+            delay_print(f"Swapping {swap_card_number} for {card_selection}", 2)
+            display_user_cards.remove(swap_card_number)
+            display_user_cards.insert(0, card_selection)
+            break
+        else:
             swap_card_number = input("Card number: \n")
     user_playing_cards.clear()
     for i in display_user_cards:
