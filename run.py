@@ -37,8 +37,8 @@ def pre_game_username():
     global user_name
     logo()
     show_game_score_history()
-
-    user_name = input('Please enter your name: ')
+    print()
+    user_name = input('Please enter your name to begin: ')
     user_name = user_name.strip()
     print()
     while True:
