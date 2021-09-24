@@ -2,6 +2,7 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
+import statistics
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
@@ -261,6 +262,7 @@ def show_game_score_history():
     num_only = number_of_cards_played_list[1:]
     convert_to_num = [int(i) for i in num_only]
     average = sum(convert_to_num) / len(convert_to_num)
+
     print(f"The average number of cards played with is {int(average)}")
     print("")
     delay_print("___________________________", 2)
