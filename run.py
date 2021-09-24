@@ -39,9 +39,13 @@ def pre_game_username():
     user_name = input('Please enter your name: ')
     user_name = user_name.strip()
     print()
-    while (len(user_name)) == 0:
-        user_name = input('Please enter your name: \n')
-    read_rules()
+    while True:
+        if (len(user_name)) == 0:
+            user_name = input('Please enter your name: \n')
+            user_name = user_name.strip()
+        else:
+            read_rules()
+            break
     
 
 
