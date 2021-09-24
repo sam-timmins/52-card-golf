@@ -45,8 +45,7 @@ def pre_game_username():
             user_name = user_name.strip()
         else:
             read_rules()
-            break
-    
+            break    
 
 
 def read_rules():
@@ -69,7 +68,6 @@ def read_rules():
         else:
             delay_print("Please enter a correct option...", 0)
             read_rules = input('yes or no: \n')
-
 
 
 def select_number_of_cards_for_game():
@@ -139,6 +137,7 @@ def users_move():
             return
         else:
             swap_or_not = input("Please enter 'swap' or 'pass':")
+
 
 def computers_move():
     """
@@ -238,6 +237,27 @@ def update_worksheet(data):
     """
     worksheet = SHEET.worksheet('high_scores')
     worksheet.append_row(data)
+
+
+def show_game_score_history():
+    """
+    Shows the last player's game stats and the average number of cards played with
+    """
+    worksheet = SHEET.worksheet('high_scores')
+    score_data = worksheet.get_all_values()
+    last_player = score_data[-1]
+
+    print(f"The last player was {last_player[0]}.")
+    print(f"They played with {last_player[1]} cards and scored {last_player[2]} points")
+    print("Try and beat their score...")
+    
+    number_of_cards_played_list = []
+    for data in score_data:
+        number_of_cards_played_list.append(data[1])
+    num_only = number_of_cards_played_list[1:]
+    convert_to_num = [int(i) for i in num_only]
+    average = sum(convert_to_num) / len(convert_to_num)
+    print(f"The most popular number of cards played with is {int(average)}")
 
 
 def main():
