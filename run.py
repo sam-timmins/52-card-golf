@@ -73,8 +73,14 @@ def select_number_of_cards_for_game():
     """
     global number_of_cards
     select_number_of_cards_for_game_text()
-    number_of_cards = int(input("\n"))
-    deal_cards()
+    number_of_cards = int(input(""))
+    while True:
+        if number_of_cards < 3 or number_of_cards > 10:
+            print("Please enter a number betwwen 3 and 10 inclusive")
+            number_of_cards = int(input(""))
+        else:
+            deal_cards()
+            break
 
 
 def deal_cards():
