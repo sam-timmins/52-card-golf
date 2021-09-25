@@ -215,7 +215,14 @@ def end_game():
     else:
         delay_print("It's a draw....", 2)
     print()
-    delay_print("Have another game!", 2)
+    delay_print("Have another game by hitting the button at the top!", 2)
+    print("""
+
+          _____________________
+        /                       \ 
+       |    PLAY 52 CARD GOLF    |
+        \ _____________________ /
+    """)
 
 
 def data(user, cards, scores):
