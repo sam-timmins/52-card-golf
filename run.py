@@ -255,9 +255,8 @@ def show_game_score_history():
     worksheet = SHEET.worksheet('high_scores')
     score_data = worksheet.get_all_values()
     last_player = score_data[-1]
-    print("Game stats")
-    delay_print("___________________________", 2)
-    print()
+    delay_print("Game stats", 0)
+    delay_print("___________________________ \n", 2)
     delay_print(f"The last player was {last_player[0]}.", 1)
     delay_print(f"They played with {last_player[1]} cards and scored {last_player[2]} points", 1)
     delay_print("", 1)
@@ -271,10 +270,8 @@ def show_game_score_history():
 
     mode_card = statistics.mode(convert_to_num)
 
-    delay_print(f"The average number of cards played with is {int(average)}", 2)
-    print("")
-    delay_print(f"The most common number of cards played with is {mode_card}", 2)
-    print("")
+    delay_print(f"The average number of cards played with is {int(average)} \n", 2)
+    delay_print(f"The most common number of cards played with is {mode_card} \n", 2)
     delay_print("___________________________", 2)
 
 
