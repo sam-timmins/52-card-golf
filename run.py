@@ -39,9 +39,8 @@ def pre_game_username():
     logo()
     show_game_score_history()
     print()
-    user_name = input('Please enter your name to begin: ')
+    user_name = input(' Please enter your name to begin: \n')
     user_name = user_name.strip()
-    print()
     while True:
         if (len(user_name)) == 0:
             user_name = input('Please enter your name: \n')
@@ -84,7 +83,7 @@ def select_number_of_cards_for_game():
     number_of_cards = int(input(""))
     while True:
         if number_of_cards < 3 or number_of_cards > 10:
-            print("Please enter a number betwwen 3 and 10 inclusive")
+            delay_print("Please enter a number betwwen 3 and 10 inclusive", 0)
             number_of_cards = int(input(""))
         else:
             deal_cards()
@@ -272,7 +271,7 @@ def show_game_score_history():
 
     delay_print(f"The average number of cards played with is {int(average)} \n", 2)
     delay_print(f"The most common number of cards played with is {mode_card} \n", 2)
-    delay_print("___________________________", 2)
+    delay_print("___________________________ \n", 2)
 
 
 def main():
