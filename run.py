@@ -39,11 +39,12 @@ def pre_game_username():
     logo()
     show_game_score_history()
     print()
-    user_name = input(' Please enter your name to begin: \n')
+    delay_print("Please enter your name to begin", 0)
+    user_name = input('  ')
     user_name = user_name.strip()
     while True:
         if (len(user_name)) == 0:
-            user_name = input('Please enter your name: \n')
+            user_name = input('  Please enter your name: ')
             user_name = user_name.strip()
         else:
             read_rules()
