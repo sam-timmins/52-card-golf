@@ -127,8 +127,8 @@ def users_move():
     format_card_to_int()
     delay_print(f"The top card picked from the deck is {card_selection}", 2)
     print()
-    delay_print("What's your next move?", 1)
-    swap_or_not = input("'swap' or 'pass': \n")
+    delay_print("What's your next move?", 0)
+    swap_or_not = input("swap ('s') or pass ('p'): \n")
     while True:
         if swap_or_not.lower() == 'swap' or swap_or_not.lower() == 's':
             print()
@@ -215,9 +215,8 @@ def end_game():
     else:
         delay_print("It's a draw....", 2)
     print()
-    delay_print("Have another game by hitting the button at the top!", 2)
+    delay_print("Have another game by hitting the button at the top!", 0)
     print("""
-
           _____________________
         /                       \ 
        |    PLAY 52 CARD GOLF    |
