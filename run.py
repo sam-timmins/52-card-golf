@@ -85,19 +85,19 @@ def select_number_of_cards_for_game():
     number_of_cards = input()
 
     while True:
+        number_of_cards = number_of_cards.strip()
         if not number_of_cards:
             delay_print("Please enter a number betwwen 3 and 10 inclusive", 0)
             number_of_cards = input()
         else:
-            break
-    while True:
-        number_of_cards = int(number_of_cards)
-        if number_of_cards < 3 or number_of_cards > 10:
-            delay_print("Please enter a number betwwen 3 and 10 inclusive", 0)
-            number_of_cards = int(input())
-        else:
-            deal_cards()
-            break
+            number_of_cards = number_of_cards.strip()
+            number_of_cards = int(number_of_cards)
+            if number_of_cards < 3 or number_of_cards > 10:
+                delay_print("Please enter a number betwwen 3 and 10 inclusive", 0)
+                number_of_cards = input()
+            else:
+                deal_cards()
+                break
 
 
 def deal_cards():
