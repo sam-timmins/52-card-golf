@@ -6,7 +6,7 @@ import statistics
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, select_number_of_cards_for_game_text, SHEET
+    game_over_text, select_number_of_cards_for_game_text, SHEET 
 
 def pick_card_from_deck():
     """
@@ -135,7 +135,7 @@ def users_move():
     delay_print(f"The top card picked from the deck is {card_selection}", 2)
     print()
     delay_print("What's your next move?", 0)
-    swap_or_not = input("swap ('s') or pass ('p'): \n")
+    swap_or_not = input("  swap ('s') or pass ('p'): ")
     while True:
         if swap_or_not.lower() == 'swap' or swap_or_not.lower() == 's':
             print()
@@ -146,7 +146,7 @@ def users_move():
             print()
             return
         else:
-            swap_or_not = input("Please enter 'swap' or 'pass':")
+            swap_or_not = input("  Please enter 'swap' or 'pass':")
 
 
 def computers_move():
