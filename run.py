@@ -168,9 +168,8 @@ def swap_users_card():
     """
     Swaps the user's card depending on their choice of game, then the card
     """
-    print(display_user_cards)
-    print()
-    swap_card_number = input("Card number: \n")
+    delay_print(display_user_cards, 0)
+    swap_card_number = input("  Card number: ")
     while swap_card_number:
         if swap_card_number.upper() in display_user_cards:
             delay_print(f"Swapping {swap_card_number.upper()} for {card_selection}", 2)
@@ -178,7 +177,7 @@ def swap_users_card():
             display_user_cards.insert(0, card_selection)
             break
         else:
-            swap_card_number = input("Card number: \n")
+            swap_card_number = input("  Card number: ")
     user_playing_cards.clear()
     for i in display_user_cards:
         user_playing_cards.append(int(i[1:]))
