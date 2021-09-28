@@ -169,7 +169,7 @@ The game will be built using a pre-built template that Code Institute has provid
 # Technologies used
 
 ## Languages
-
+* [HTML](https://en.wikipedia.org/wiki/HTML5 "HTML") for the structure of the site
 
 ## Libraries and Frameworks
 
