@@ -173,12 +173,24 @@ The game will be built using a pre-built template that Code Institute has provid
 * [CSS](https://en.wikipedia.org/wiki/CSS "CSS") for the design of the site
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JS") was built into the template supplied by Code Institute
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python") for the game code
-* [Markdown](https://en.wikipedia.org/wiki/Markdown) for the content in my README.md
+* [Markdown](https://en.wikipedia.org/wiki/Markdown) for the content in my README file
 
 ## Libraries and Frameworks
 
 ## Tools
 
+* For construction [Gitpod](https://www.gitpod.io/ "Gitpod")
+* For wireframes [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
+* For HTML validation [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+* For CSS validation [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+* For the box shadows [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
+* For the contract checking [WebAIM](https://webaim.org/resources/contrastchecker/ "WebAIM")
+* For general code queries [W3Schools](https://www.w3schools.com/ "W3Schools")
+* For python queries [python](https://www.python.org/ "py")
+* For the colour pallet [Colourmind](https://colormind.io/ "colourmind")
+* For spell checking [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen/related?hl=en "Grammarly")
+* For the API [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform "GCP") 
+* To hold the completed game data [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets "Sheets")
 
 \
 &nbsp;
