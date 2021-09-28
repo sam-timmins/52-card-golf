@@ -177,10 +177,17 @@ The game will be built using a pre-built template that Code Institute has provid
 
 ## Libraries and Frameworks
 
+* API for Google Sheets [gspread](https://docs.gspread.org/en/v4.0.1/)
+* For delying the appearance of the text [python time library](https://docs.gspread.org/en/v4.0.1/ ".py time")
+* For selecting a random card from the deck [python random library](https://docs.python.org/3/library/random.html?#module-random ".py random")
+* For the games history [python statistics library](https://docs.python.org/3/library/statistics.html?#module-statistics ".py statistics")
+
+
 ## Tools
 
 * For construction [Gitpod](https://www.gitpod.io/ "Gitpod")
 * For wireframes [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
+
 * For HTML validation [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
 * For CSS validation [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
 * For the box shadows [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
