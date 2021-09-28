@@ -93,9 +93,8 @@ def select_number_of_cards_for_game():
             else:
                 deal_cards()
                 break
-        else:  
+        else:
             number_of_cards = input("  Must be between 3 and 10 inclusive: ")
-
 
 
 def deal_cards():

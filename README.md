@@ -192,10 +192,22 @@ Using the [PEP8](http://pep8online.com/ "PEP8") code validator for the Python co
 ![data](wireframes/warning-data.jpg)
 
 \
-&nbsp;
+&nbsp; 
+
+
+## Bugs
+
+I had several bugs in the building process, mostly due to the validations of the user's inputs, but a major one also that I had to immediately rectify.
+
+* On my validation of the number of user cards they wish to play with, on my tests, I thought that it was working. However, when I put my project out to the Slack community, Andrew Dempsey managed to find an issue where if the user entered a blank space, it threw up a ValueError. My while statement wasn't thorough enough so I added a strip of the whitespace and then a conversion to an integer for the maths. Again I believed my issue was resolved until I put my project to my 7-year-old daughter. She got to this part of the game and hit the letter 'Q'. I hadn't taken this into consideration and it crashed the game. I adjusted my while loop again with a .isdigit() and this finally completed this part of validation.
+
+* Another issue relating to choosing the number of cards was in the users move function. I spent a very long time trying to work out why I wasn't breaking out of the loop in the select number of cards function and it kept asking me to input 'Must be between 3 and 10 inclusive:'. This should have been a simple fix, as my break was working I had just missed out on a 'return' in the user move function. I wasted a lot of time here, lesson learnt!
+
+* The major issue that I had was again due to a lack of complete understanding of the API process with Heroku. I managed to push my creds.json file to GitHub and caused Google to get in contact with me over a [violation](wireframes/google-violation.jpg "Google Violation"). I rectified this by closing it down and then creating a new API and completing the process correctly.
 
 ## Unfixed Bugs
 
+* There are no unfixed bugs
 
 \
 &nbsp;
