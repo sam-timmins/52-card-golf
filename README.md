@@ -184,6 +184,12 @@ The game will be built using a pre-built template that Code Institute has provid
 
 # Testing
 
+## Code Validation
+Using the [PEP8](http://pep8online.com/ "PEP8") code validator for the Python code, I have two errors of trailing whitespace. Both are within my images, where they are needed to prevent a styling issue following a backslash. I decided to leave these errors in as removing them would destroy the look of the game.
+
+![run](wireframes/warning-run.jpg)
+
+![data](wireframes/warning-data.jpg)
 
 \
 &nbsp;

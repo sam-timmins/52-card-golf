@@ -224,7 +224,7 @@ def end_game():
     delay_print("Have another game by hitting the button at the top!", 0)
     print("""
           _____________________
-        /                       \
+        /                       \ 
        |    PLAY 52 CARD GOLF    |
         \ _____________________ /
     """)
