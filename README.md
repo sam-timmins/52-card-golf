@@ -184,7 +184,31 @@ The game will be built using a pre-built template that Code Institute has provid
 
 # Testing
 
+I used a wide scope of people to carry out the initial part of my testing.
+
+Initially, I showed them the start of the game and asked them what they thought the game was going to involve or the theme of it. Unanimously the feedback was good, that it was going to be some sort of card game.
+
+I then gave them the simple task of 'Complete the game, playing with 3 cards'. I logged their ability to complete the task and then their feedback.
+
+&nbsp;
+
+| Age | Tech Experience | Task Completed | Comments/ Improvements
+| --- | ----------      | -------------  | --------
+|  7  | Limited         | Yes            | Red is my favourite colour
+| 19  | Advanced        | Yes            | Change the swap and pass to 's' and 'p'
+| 39  | Moderate        | Yes            | Make it so I don't have to capitalize my letters
+| 42  | Advanced        | Yes            | Show me some game statistics so I can base my game on what others have played
+| 76  | Moderate        | Yes            | Space out the rules text to make it easier to read
+| 78  | None            | Yes            | I don't like computers, I'm going outside again
+
+&nbsp;
+
+From this testing, I implemented the changes that were recommended as they were all within my capabilities and not time-consuming to achieve.
+
+
+
 ## Code Validation
+
 Using the [PEP8](http://pep8online.com/ "PEP8") code validator for the Python code, I have two errors of trailing whitespace. Both are within my images, where they are needed to prevent a styling issue following a backslash. I decided to leave these errors in as removing them would destroy the look of the game.
 
 ![run](wireframes/warning-run.jpg)
