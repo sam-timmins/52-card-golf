@@ -278,8 +278,10 @@ def show_game_score_history():
 
     mode_card = statistics.mode(convert_to_num)
 
-    delay_print(f"The average number of cards played with is {int(average)} \n", 2)
-    delay_print(f"The most common number of cards played with is {mode_card} \n", 2)
+    delay_print(f"The average number of cards played with is {int(average)} "
+                "\n", 2)
+    delay_print(f"The most common number of cards played with is {mode_card} "
+                "\n", 2)
     delay_print("___________________________ \n", 2)
 
 
