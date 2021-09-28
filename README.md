@@ -187,7 +187,7 @@ The game will be built using a pre-built template that Code Institute has provid
 
 * For construction [Gitpod](https://www.gitpod.io/ "Gitpod")
 * For wireframes [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
-
+* For python validation [PEP8 online](http://pep8online.com/ "PEP8")
 * For HTML validation [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
 * For CSS validation [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
 * For the box shadows [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
