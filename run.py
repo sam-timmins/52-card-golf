@@ -84,9 +84,7 @@ def select_number_of_cards_for_game():
 
     while True:
         number_of_cards = number_of_cards.strip()
-        if not number_of_cards:
-            number_of_cards = input("  Must be between 3 and 10 inclusive: ")
-        else:
+        if number_of_cards.isdigit():
             number_of_cards = number_of_cards.strip()
             number_of_cards = int(number_of_cards)
             if number_of_cards < 3 or number_of_cards > 10:
@@ -95,6 +93,9 @@ def select_number_of_cards_for_game():
             else:
                 deal_cards()
                 break
+        else:  
+            number_of_cards = input("  Must be between 3 and 10 inclusive: ")
+
 
 
 def deal_cards():
