@@ -105,6 +105,11 @@ The colour scheme is based on the red felt from a poker table. I used  [Colourmi
 
 I haven't used any images for this game, however, to make the start and end of the game jump out a little more, I used [patorjk.com](https://patorjk.com/software/taag/#p=display&h=1&f=Big&t=52%20Card%20Golf%0A) to create giant text that would appear as an image within the terminal.
 
+\
+&nbsp;
+![52 Card Golf](wireframes/opening-image.jpg "52 Card Golf")
+![Game Over](wireframes/end-image.jpg "Game Over")
+
 ### Structure
 The structure of this project has been mapped out using [Lucid](https://lucid.co/ "Lucid"). Using the preformed shapes in [Lucid](https://lucid.co/ "Lucid"), I created my key of shapes.
 
