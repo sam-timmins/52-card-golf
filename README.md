@@ -170,6 +170,10 @@ The game will be built using a pre-built template that Code Institute has provid
 
 ## Languages
 * [HTML](https://en.wikipedia.org/wiki/HTML5 "HTML") for the structure of the site
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS") for the design of the site
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JS") was built into the template supplied by Code Institute
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python") for the game code
+* [Markdown](https://en.wikipedia.org/wiki/Markdown) for the content in my README.md
 
 ## Libraries and Frameworks
 
