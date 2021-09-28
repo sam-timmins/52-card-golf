@@ -157,7 +157,90 @@ The game will be built using a pre-built template that Code Institute has provid
 
 ## Existing Features
 
+The first feature that is present in the game is the game button. This resets the terminal and the game for the user to play again. The button is very simple in design, there is only an active state attached to it to inform the user when it has been pressed. The text contained in it is clear to the user that it is to be pressed to play again, along with the instruction at the end of the game.
+
+* Start game button
+
+![Start Game Button](wireframes/start-game-button.jpg) 
+
+
+* Start game button in an active state
+
+![Start Game Button](wireframes/start-game-button-active.jpg)
+
+&nbsp;
+
+The game logo follows along with the creator's name. The design of the logo is in clear and easily read text.
+
+![Game logo](wireframes/game-logo.jpg)
+
+
+&nbsp;
+
+The previous game statistics inform the user of the last game that was played. The information given is pulled from a Google Sheets document and gives the last players name, the number of cards they played with and their score. Alongside this is information to help the user choose an option that is the most popular game setting.
+
+![Start Game Stats](wireframes/game-stats.jpg)
+
+
+&nbsp;
+
+The user is prompted to enter their name to personalise the game. This is the first instance where validation takes place as there is no way to proceed unless some text is entered. Whitespace does not count and will prompt again for a name to be entered.
+
+![Enter Name](wireframes/game-enter-name.jpg)
+
+
+&nbsp;
+
+The first choice by the user is to decide if they would like to read the rules of the game or not. Validation is applied here also where only: yes, y, no or n can be entered in either upper or lower case.
+
+If the user selects yes, the rules are gradually displayed giving the user plenty of time to read them, the game then begins.
+
+![Game Rules](wireframes/game-rules-yes.jpg)
+
+If the user decides that they are happy with the rules, the game skips forward to begin the next feature.
+
+![Game Rules](wireframes/game-rules-no.jpg)
+
+&nbsp;
+
+The game begins properly with the selection of the number of cards the user would like to play with. Validation is applied here so the user can only select a number between 3 and 10 inclusive. anything outside of this will throw the input again. Whitespace on its own, letters and numbers outside of the required range will activate this. When the conditions have been met, the user may then progress.
+
+![Pick Cards](wireframes/game-pick-number-of-cards.jpg)
+
+&nbsp;
+
+The number of rounds is clearly shown to indicate to the user how far they are through the game. A card is picked from the deck and shown to the user, then they are given the option to swap the card or pass their go. there is also validation on the user's input here. The only options are: swap, s, pass or p, these options are not case sensitive either.
+
+If the user decides that they would like to swap one of their cards, they are prompted to select one of their own. The choice is not case sensitive but must match one in their hand. When the card is swapped, the user is then displayed with their game total.
+
+![Swap Move](wireframes/game-move-swap.jpg)
+
+If the user passes, then it moves to the computers move.
+
+![Pass Move](wireframes/game-move-pass.jpg)
+
+&nbsp;
+
+The computer's move is simply text set at small intervals to give the impression that the user is playing against someone needed thinking time.
+
+![Computer's MoveSam
+](wireframes/game-computer-move.jpg)
+
+&nbsp;
+
+When the rounds have been completed, the user is presented with the game over logo. This logo makes it very obvious that the game has been completed. The added extra of the count down also adds to the user experience of feeling that something is happening behind scenes, adding a small bit of tension. 
+
+![Game Over](wireframes/game-game-over.jpg)
+
+&nbsp;
+
+The results give feedback to the user on their scores and the results. Also, it encourages the user to play again and gives instruction on how to do so.
+
+![End Game Results](wireframes/game-end-game-stats.jpg)
+
+
 ## Features to be Implemented
+
 
 
 \
