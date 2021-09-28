@@ -6,7 +6,8 @@ import statistics
 from utils import delay_print
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, select_number_of_cards_for_game_text, SHEET 
+    game_over_text, select_number_of_cards_for_game_text, SHEET
+
 
 def pick_card_from_deck():
     """
@@ -48,7 +49,7 @@ def pre_game_username():
             user_name = user_name.strip()
         else:
             read_rules()
-            break    
+            break
 
 
 def read_rules():
@@ -57,8 +58,8 @@ def read_rules():
     """
     global user_name
     print()
-    read_rules = input(f'  Hi {user_name}, would you like to read the rules of '
-                       'the game?\n  yes or no: ')
+    read_rules = input(f'  Hi {user_name}, would you like to read the rules '
+                       'of the game?\n  yes or no: ')
     while True:
         if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
             print()
@@ -92,7 +93,8 @@ def select_number_of_cards_for_game():
             number_of_cards = number_of_cards.strip()
             number_of_cards = int(number_of_cards)
             if number_of_cards < 3 or number_of_cards > 10:
-                number_of_cards = input("  Must be between 3 and 10 inclusive: ")
+                number_of_cards = input("  Must be between 3 and 10 "
+                                        "inclusive: ")
             else:
                 deal_cards()
                 break
