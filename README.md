@@ -96,6 +96,11 @@ This project will be a text-based python game where the user has to beat the com
 The terminal that was provided by Code Institute to complete this project, used a standard monospace font. In order to keep the theme running through the game, I decided to change the font of the button to the [Courier New](https://en.wikipedia.org/wiki/Courier_(typeface) "Courier New") font. This fits in with the terminal and joins the elements up nicely.
 
 ### Colours
+
+The colour scheme is based on the red felt from a poker table. I used  [Colourmind](http://colormind.io/) and initially picked the red that I was looking for. I generated a set of colours, and it created a five colour pallet that can be seen [here](wireframes/generated-colour-scheme.jpg). Colourmind generated an off white that was a perfect contrast match with my red, the results of that can be seen [here](wireframes/contrast-checker.jpg) . My final colour scheme is below.
+
+![Colour Scheme](wireframes/colour-scheme.jpg "Colour Scheme")
+
 ### Images
 
 ### Structure
