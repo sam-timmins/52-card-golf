@@ -1,6 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
 import statistics
 from utils import delay_print
@@ -174,7 +171,8 @@ def swap_users_card():
     swap_card_number = input("  Card number: ")
     while swap_card_number:
         if swap_card_number.upper() in display_user_cards:
-            delay_print(f"Swapping {swap_card_number.upper()} for {card_selection}", 2)
+            delay_print(f"Swapping {swap_card_number.upper()} \
+for {card_selection}", 2)
             display_user_cards.remove(swap_card_number.upper())
             display_user_cards.insert(0, card_selection)
             break
@@ -226,7 +224,7 @@ def end_game():
     delay_print("Have another game by hitting the button at the top!", 0)
     print("""
           _____________________
-        /                       \ 
+        /                       \
        |    PLAY 52 CARD GOLF    |
         \ _____________________ /
     """)
@@ -258,7 +256,8 @@ def update_worksheet(data):
 
 def show_game_score_history():
     """
-    Shows the last player's game stats and the average number of cards played with
+    Shows the last player's game stats and the average number
+    of cards played with
     """
     worksheet = SHEET.worksheet('high_scores')
     score_data = worksheet.get_all_values()
@@ -266,7 +265,8 @@ def show_game_score_history():
     delay_print("Game stats", 0)
     delay_print("___________________________ \n", 2)
     delay_print(f"The last player was {last_player[0]}.", 1)
-    delay_print(f"They played with {last_player[1]} cards and scored {last_player[2]} points", 1)
+    delay_print(f"They played with {last_player[1]} cards and scored \
+{last_player[2]} points", 1)
     delay_print("", 1)
 
     number_of_cards_played_list = []
