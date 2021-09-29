@@ -311,6 +311,39 @@ I then gave them the simple task of 'Complete the game, playing with 3 cards'. I
 
 From this testing, I implemented the changes that were recommended as they were all within my capabilities and not time-consuming to achieve.
 
+### UX Testing
+
+| Requirements & Expectations | Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+|Single page layout | Yes | Yes | Provided by Code Institute template
+|Feedback on performance | Yes | Yes | Various feedback depending on the result of the game
+| Clear instruction as to when the game starts and finishes | Yes | Yes | Logos and text to define both the beginning and end of the game
+|Validation of user inputs| Yes | Yes | Validation on all inputs tailored to suit
+| Feedback to the user on their input to the game | Yes | Yes | Continual update to the user on their score and their current hand of cards
+| Option of reading the rules or not | Yes | Yes | 
+
+&nbsp;
+
+&nbsp;
+
+| User Goals | Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+| Selection of cards able to be played with | Yes | Yes | From 3 - 10 cards
+| Continual score feedback throughout the game | Yes | Yes | After every user swap round
+| Know when it is the users go and not | Yes | Yes | Clear text indication
+| Clear instruction as to how to play the game | Yes | Yes | Line spacing and delay printing of text
+| Know the outcome of the game, win, lose or draw| Yes | Yes | Displayed at the end of the game
+
+&nbsp;
+
+&nbsp;
+
+| Site Owners Goals | Implemented | Tested | Comments
+| ------------ | ----------- | ------ | --------
+| Where there is lots of text, present it clearly | Yes | Yes | Line spacing and delay printing of text
+| Give the user feedback on performance | Yes | Yes | Displayed at the end of the game
+| Ensure that there is validation for expected answers on all user inputs | Yes | Yes | Validation made to suit each user entry
+| Create a gentle flow of text so the user can keep up with reading it | Yes | Yes | Line spacing and delay the printing of text
 
 
 ## Code Validation
