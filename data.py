@@ -27,6 +27,9 @@ the_deck = [
 
 
 def game_rules():
+    """
+    Text for the rules of the game
+    """
     delay_print("A game of skill and pure luck!! \n", 3)
     delay_print("The winner will have the lowest cumulative score", 1)
     delay_print("at the end of the game. \n", 3)
@@ -55,6 +58,9 @@ def game_rules():
 
 
 def logo():
+    """
+    Text for the game logo
+    """
     print("""
          _____ ___     _____              _    _____       _  __
         | ____|__ \   / ____|            | |  / ____|     | |/ _|
@@ -66,12 +72,18 @@ def logo():
 
 
 def select_number_of_cards_for_game_text():
+    """
+    Text for the number of cards
+    """
     delay_print("Here we go.....", 2)
     print()
     delay_print("Pick the number of cards you would like...", 0)
 
 
 def computers_move_text():
+    """
+    Text for the computer's move
+    """
     delay_print("Computer is thinking..", 2)
     delay_print("Computer is thinking....", 2)
     delay_print("Computer is thinking......\n", 2)
@@ -79,6 +91,9 @@ def computers_move_text():
 
 
 def game_over_text():
+    """
+    Text for game over
+    """
     delay_print("", 2)
     print("""
            _____                         ____
