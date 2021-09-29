@@ -12,10 +12,11 @@ This project will be a text-based python game where the user has to beat the com
     * [User Requirements and Expectations](#user-requirements-and-expectations)
          * [Requirements](#requirements)
          * [Expectations](#expectations)
-     * [Design Choices](#design-choices)
+    * [How to Play](#how-to-play)
+    * [Design Choices](#design-choices)
         * [Fonts](#fonts)
-        * [Icons](#icons)
         * [Colours](#colours)
+        * [Images](#images)
         * [Structure](#structure)
     * [Wireframes](#wireframes)
     * [Features](#features)
@@ -26,6 +27,9 @@ This project will be a text-based python game where the user has to beat the com
         * [Libraries and Frameworks](#libraries-and-frameworks)
         * [Tools](#tools)
     * [Testing](#testing)
+        * [UX Testing](#ux-esting)
+        * [Code Validation](#code-validation)
+        * [Bugs](#bugs)
         * [Unfixed Bugs](#unfixed-bugs)
     * [Deployment](#deployment)
     * [Credits](#credits)
@@ -90,8 +94,14 @@ This project will be a text-based python game where the user has to beat the com
 * After the rounds are completed the game ends
 * The winner will have the lowest cumulative score
 
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
 ## Design Choices
-### Font
+### Fonts
 
 The terminal that was provided by Code Institute to complete this project, used a standard monospace font. In order to keep the theme running through the game, I decided to change the font of the button to the [Courier New](https://en.wikipedia.org/wiki/Courier_(typeface) "Courier New") font. This fits in with the terminal and joins the elements up nicely.
 
@@ -290,11 +300,7 @@ It is at this point that the Google Sheets document is updated. The user name, t
 * For the API [Google Cloud Platform](https://en.wikipedia.org/wiki/Google_Cloud_Platform "GCP") 
 * To hold the completed game data [Google Sheets](https://en.wikipedia.org/wiki/Google_Sheets "Sheets")
 
-\
-&nbsp;
-[Back to Top](#table-of-contents)
-\
-&nbsp;
+
 
 # Testing
 
@@ -353,6 +359,11 @@ From this testing, I implemented the changes that were recommended as they were 
 | Ensure that there is validation for expected answers on all user inputs | Yes | Yes | Validation made to suit each user entry
 | Create a gentle flow of text so the user can keep up with reading it | Yes | Yes | Line spacing and delay the printing of text
 
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ## Code Validation
 
