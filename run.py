@@ -8,7 +8,6 @@ from data import user_playing_cards, computer_playing_cards, \
 
 def pick_card_from_deck():
     """
-    Creates a global variable card_selection
     Selects a random card from the deck and removes it from the deck
     """
     global card_selection
@@ -18,8 +17,7 @@ def pick_card_from_deck():
 
 def format_card_to_int():
     """
-    Creates a global variable formatted_card
-    Strips out the number from anything selected from the deck and
+    Strips out the number from card selected from the deck and
     converts the string to an integer
     """
     global formatted_card
@@ -29,9 +27,7 @@ def format_card_to_int():
 
 def pre_game_username():
     """
-    Makes sure the user enters a value into the user name input, then asks for
-    the user to decide if they want to read the rules or not. If they do,
-    it brings up the rules, if not then starts the game
+    Requests user to enter name with validation on blank entry
     """
     global user_name
     logo()
@@ -126,8 +122,7 @@ def deal_cards():
 def users_move():
     """
     Picks a card from the deck, displays it and formats it to an integer
-    Invites the user to swap or pass. Swap leads to a move, pass gives the
-    computer a move
+    Invites the user to swap or pass.
     """
     pick_card_from_deck()
     format_card_to_int()
@@ -151,7 +146,7 @@ def users_move():
 def computers_move():
     """
     Picks and formats a card from the_deck. Changes the highest number in
-    computer_playing_cards if the picked card is less than 7
+    computer_playing_cards if the picked card is less than it
     """
     pick_card_from_deck()
     format_card_to_int()
@@ -165,7 +160,9 @@ def computers_move():
 
 def swap_users_card():
     """
-    Swaps the user's card depending on their choice of game, then the card
+    Swaps the user's card depending on their choice with validation for a
+    correct entry.
+    Displays updated user score
     """
     delay_print(display_user_cards, 0)
     swap_card_number = input("  Card number: ")
@@ -204,6 +201,7 @@ def computer_game_total():
 
 def end_game():
     """
+    Totals up both player's scores
     Gives final feedback of the game depending on the score
     """
     global user_score
