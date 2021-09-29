@@ -27,7 +27,7 @@ This project will be a text-based python game where the user has to beat the com
         * [Libraries and Frameworks](#libraries-and-frameworks)
         * [Tools](#tools)
     * [Testing](#testing)
-        * [UX Testing](#ux-esting)
+        * [UX Testing](#ux-testing)
         * [Code Validation](#code-validation)
         * [Bugs](#bugs)
         * [Unfixed Bugs](#unfixed-bugs)
