@@ -238,6 +238,13 @@ The results give feedback to the user on their scores and the results. Also, it 
 
 ![End Game Results](wireframes/game-end-game-stats.jpg)
 
+&nbsp;
+
+It is at this point that the Google Sheets document is updated. The user name, the number of cards that they played with and also their score are saved. The entries here feed the game stats at the beginning of a new game.
+
+![Google Sheets](wireframes/google-sheets.jpg)
+
+&nbsp;
 
 ## Features to be Implemented
 
