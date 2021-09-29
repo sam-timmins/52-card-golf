@@ -248,7 +248,8 @@ It is at this point that the Google Sheets document is updated. The user name, t
 
 ## Features to be Implemented
 
-
+1. Multiplayer mode
+1. Add in an automatic game over if a joker is dealt or picked
 
 \
 &nbsp;
