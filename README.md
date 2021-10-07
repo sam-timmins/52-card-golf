@@ -401,7 +401,100 @@ I had several bugs in the building process, mostly due to the validations of the
 
 The site was deployed via Heroku. Here is the live link - [52 Card Golf](https://card-golf.herokuapp.com/ "link")
 
-* Visit [heroku.com](https://www.heroku.com/home "heroku")
+The project repository was created using the *Code-Institute-Org/python-essentials-template* on GitHub and edited using GitPod.
+
+### Create a Google Sheets document
+* Log in to your Google account. If you do not have one, create a personal one [here](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp "Create Google Account")
+* In the Google Apps, waffle in the top right corner of the screen select **Sheets**
+* In the *Start a new spreadsheet* section, select **Blank**
+* These next naming stages are critical, please ensure they are correct
+* Give your new Google Sheets workbook a name of *52-card-golf* in the top left corner
+* Give your worksheet a name of *high_scores* in the bottom left corner
+* Create your column headings
+
+| Cell Reference | Content 
+| ------| -----
+| A1 | Username
+| B1 | Number of Cards
+| C1 | Score
+
+### Activate API Credentials
+* Open the *Google Cloud Platform* by following this [link](https://console.cloud.google.com/?pli=1 "Google Cloud Platform")
+* Ensure the correct account is selected in the top right corner of the screen
+* Click on the **Select a project** button in the main navbar
+* Then select **New Project**
+* Give the project a name and click **Create**
+* In the information box, select **Select Project**
+* Open the hamburger in the top left corner and select **APIs and Services** and the **Library**
+* In the Search bar type *Google Drive* and then select **Google Drive API**
+* Click **Enable**
+* Click **Create Credentials** button in the top right corner of the screen
+* From the dropdown, select *Google Drive API*
+* Select *Application data* and then *No, I'm not using them* and click on **Next**
+* Enter a *Service account name*, this can be anything you like and click on **Create and Continue**
+* From the *Select a role* dropdown, hover over *Basic* and select **Editor** the click on **Done**
+* On the next screen, click on the long email address in the *Service Accounts* section
+* In the navigation tabs below your service account name, select *KEYS*
+* Click on the *ADD KEY* dropdown and select **Create new key**
+* Ensure *JSON* is selected and then click on **Create**
+* This downloads the credentials file, usually this will be downloaded to your downloads folder, but check its location by right-clicking on it at the bottom of the screen and select **Show in folder**
+* Open the hamburger in the top left corner and select **APIs and Services** and the **Library**
+* In the Search bar type *Google Sheets* and then select **Google Sheets API**
+* Click **Enable**
+
+ 
+### Clone the repo with GitPod
+* Log in to your GitHub account
+* Follow this link to access this repository - [52 card golf repo](https://github.com/sam-timmins/52-card-golf)
+* Select the **Code** dropdown button situated above the list of files
+* Make sure that the HTTPS tab is selected
+* Click on the **Copy** button to the right of the URL
+* Open a new GitPod workspace
+* In the terminal type *git clone (paste the URL here)* and then press enter
+* The repo will now be downloaded and cloned
+* Open your [GitPod workspaces](https://gitpod.io/workspaces "GitPod workspaces")
+* Select the three dots to the right-hand side of your workspace and select **Pin**
+
+
+### Set up your Workspace
+
+* Locate your credentials file that you downloaded in the [Activate API Credentials](#activate-api-credentials) section.
+* Drag and drop it into your workspace, below the files.
+* Right-click on the file and rename it to *creds.json*
+* Open the creds.json file and copy the content of the client email
+
+ ```
+ "client_mail": "____copy_this_____"
+ ```
+
+* Open your Google Sheets worksheet previously created.
+* Click the **Share** button in the top right corner
+* Paste in the *client email*
+* Ensure *Editor* is selected in the dropdown
+* Unselect the *Notify people* checkbox
+* Click the **Share** button
+* Go back to your workspace
+* Open the file *gitignore*
+* Add *creds.json* to the bottom of the list and save the file *(Ctrl + S)*
+* In the terminal in your workspace, type:
+```
+git add .
+git status
+
+```
+* If your creds.json file appears in the terminal, please revisit from the *'Go back to your workspace'* point as a mistake has been made.
+* To install your dependencies into the workspace, enter the below code into the terminal and then hit enter
+
+```
+pip3 install gspread google-auth
+```
+
+
+
+
+### Deployment via Heroku
+
+* Visit [heroku.com](https://www.heroku.com/home "Heroku")
 * Create a new account or sign in
 * From the dashboard, select 'New' and then 'Create new app'
 * Enter an individual app name into the text box, select a region from the dropdown and then press 'Create app'
@@ -419,7 +512,7 @@ The site was deployed via Heroku. Here is the live link - [52 Card Golf](https:/
 * When they are on the dashboard, ensure that python is above node.js on the list
 * Open the 'Deploy' tab
 * In the deployment method section, select 'GitHub' and confirm the connection.
-* Enter the repo-name into the text box and click 'Search'. When the correct repo appears below, click 'Connect'
+* Enter the repo-name into the text box and click 'Search. When the correct repo appears below, click 'Connect'
 * In the Automatic deploys section, click 'Enable Automatic Deploys'. This updates every time GitHub code is pushed
 * To complete the process click on the 'Deploy Brach' button in the Manual deploy section, this will take a few seconds to complete while Heroku builds the app
 * A message will appear informing you that the app was successfully deployed and a 'View' button will bring you to the live site
