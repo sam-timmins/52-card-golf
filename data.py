@@ -35,9 +35,11 @@ def game_rules():
     delay_print("at the end of the game. \n", 3)
     delay_print("We use a standard 52-card pack. \n", 3)
     delay_print("You will be asked how many cards you would like to "
-                "play. \n", 3)
-    delay_print("4 cards selected will play 3 rounds", 2)
-    delay_print("6 cards selected will play 5 rounds", 1)
+                "play with. \n", 3)
+    delay_print("You can pick between 3 and 10 cards", 2)
+    delay_print("There will always be one less round that the number "
+                "of cards you select", 2)
+    delay_print("3 cards selected will play 2 rounds", 1)
     delay_print("8 cards selected will play 7 rounds \n", 1)
     delay_print("The computer will randomly deal. \n", 3)
     delay_print("Your cards will be shown to you at the start. \n", 3)
