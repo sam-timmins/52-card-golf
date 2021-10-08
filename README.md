@@ -278,7 +278,7 @@ It is at this point that the Google Sheets document is updated. The user name, t
 
 ## Libraries and Frameworks
 
-* API for Google Sheets [gspread](https://docs.gspread.org/en/v4.0.1/)
+* Python package for Google Sheets [gspread](https://docs.gspread.org/en/v4.0.1/)
 * For delying the appearance of the text [python time library](https://docs.gspread.org/en/v4.0.1/ ".py time")
 * For selecting a random card from the deck [python random library](https://docs.python.org/3/library/random.html?#module-random ".py random")
 * For the games history [python statistics library](https://docs.python.org/3/library/statistics.html?#module-statistics ".py statistics")
