@@ -141,7 +141,8 @@ def users_move():
             print()
             return
         else:
-            swap_or_not = input("  Please enter 'swap' or 'pass':")
+            swap_or_not = input("  That's not a valid option, please enter "
+                                "'s' or 'p':")
 
 
 def computers_move():
