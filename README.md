@@ -291,6 +291,7 @@ It is at this point that the Google Sheets document is updated. The user name, t
 * For python validation [PEP8 online](http://pep8online.com/ "PEP8")
 * For HTML validation [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
 * For CSS validation [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+* For python code validation [PEP8 online](http://pep8online.com/ "PEP8")
 * For the box shadows [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
 * For the contract checking [WebAIM](https://webaim.org/resources/contrastchecker/ "WebAIM")
 * For general code queries [W3Schools](https://www.w3schools.com/ "W3Schools")
