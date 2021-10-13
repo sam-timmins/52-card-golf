@@ -323,6 +323,7 @@ def rounds_loop():
     number_of_rounds = number_of_cards - 1
     while rounds < number_of_rounds + 1:
         clear_terminal()
+        print()
         delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
         print()
         print()
