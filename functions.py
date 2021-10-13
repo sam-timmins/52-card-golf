@@ -58,7 +58,7 @@ def read_rules():
             print()
             clear_terminal()
             game_rules()
-            select_number_of_cards_for_game()
+            ready_to_play()
             break
         elif rules.lower() == 'n' or rules.lower() == 'no':
             print()
