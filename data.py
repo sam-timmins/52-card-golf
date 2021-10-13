@@ -133,6 +133,8 @@ def game_over_text():
     clear_terminal()
     print()
     delay_print("Totaling the scores...", 3)
+    print()
+    print()
     delay_print("Ready in...", 2)
     delay_print("3...", 1)
     delay_print("2...", 1)
