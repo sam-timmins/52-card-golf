@@ -75,21 +75,17 @@ def ready_to_play():
     Allows the user to quit the game or continue to play
     after reading the rules
     """
-    delay_print("Are you ready to play or go and do something not as "
-                "cool!?", 0)
-    ready = input("  'y' or 'n'")
+    delay_print("Hit 'y' when you are ready to play", 0)
+    ready = input()
+    
     while True:
         if ready.lower() == 'y' or ready.lower() == 'yes':
             clear_terminal()
             select_number_of_cards_for_game()
             break
-        elif ready.lower() == 'n' or ready.lower() == 'no':
-            clear_terminal()
-            game_over_logo()
-            break
         else:
             delay_print("Please enter a correct option...", 0)
-            ready = input('  yes or no: \n')
+            ready = input("")
 
 
 def select_number_of_cards_for_game():
