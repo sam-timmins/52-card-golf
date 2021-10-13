@@ -178,7 +178,7 @@ def computers_move():
         computer_playing_cards[-1] = formatted_card
     else:
         formatted_card >= computer_playing_cards[-1]
-    computers_move_text()
+    computer_funny_joke()
 
 
 def computer_funny_joke():
