@@ -30,6 +30,7 @@ def game_rules():
     """
     Text for the rules of the game
     """
+    rules_logo()
     delay_print("A game of skill and pure luck!! \n", 3)
     delay_print("The winner will have the lowest cumulative score", 1)
     delay_print("at the end of the game. \n", 3)
