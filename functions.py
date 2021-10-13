@@ -51,22 +51,44 @@ def read_rules():
     """
     global user_name
     print()
-    read_rules = input(f'  Hi {user_name}, would you like to read the rules '
-                       'of the game?\n  yes or no: ')
+    rules = input(f'  Hi {user_name}, would you like to read the rules '
+                  'of the game?\n  yes or no: ')
     while True:
-        if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
+        if rules.lower() == 'y' or rules.lower() == 'yes':
             print()
             clear_terminal()
             game_rules()
             select_number_of_cards_for_game()
             break
-        elif read_rules.lower() == 'n' or read_rules.lower() == 'no':
+        elif rules.lower() == 'n' or rules.lower() == 'no':
             print()
             select_number_of_cards_for_game()
             break
         else:
             delay_print("Please enter a correct option...", 0)
-            read_rules = input('yes or no: \n')
+            rules = input('yes or no: \n')
+
+
+def ready_to_play():
+    """
+    Allows the user to quit the game or continue to play
+    after reading the rules
+    """
+    delay_print("Are you ready to play or go and do something not as "
+                "cool!?", 0)
+    ready = input("  'y' or 'n'")
+    while True:
+        if ready.lower() == 'y' or ready.lower() == 'yes':
+            clear_terminal()
+            select_number_of_cards_for_game()
+            break
+        elif ready.lower() == 'n' or ready.lower() == 'no':
+            clear_terminal()
+            game_over_text()
+            break
+        else:
+            delay_print("Please enter a correct option...", 0)
+            ready = input('  yes or no: \n')
 
 
 def select_number_of_cards_for_game():
