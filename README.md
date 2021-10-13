@@ -529,6 +529,7 @@ pip3 install gspread google-auth
 * [Code Institute](https://codeinstitute.net/all-access-coding-challenge/?gclsrc=aw.ds&&msclkid=1915e48bf28d11888d1785dfd2b04125&utm_source=bing&utm_medium=cpc&utm_campaign=a%26c_SEA_IRL_BR_Brand_Code_Institute&utm_term=code%20institute&utm_content=exa_Brand "CI") for the template
 * [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin") for advice and direction
 * [GeeksforGeeks](https://www.geeksforgeeks.org/clear-screen-python/ "GeeksforGeeks") for code for clearing the terminal
+* [kidadl](https://kidadl.com/articles/cracking-computer-jokes-for-your-kids "kidadl") for the quality jokes
 * For testing and feedback, my 'testing focus group' (they know who they are!)
 
 \
