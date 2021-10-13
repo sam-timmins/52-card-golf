@@ -265,6 +265,7 @@ def end_game():
        |    PLAY 52 CARD GOLF    |
         \ _____________________ /
     """)
+    game_over_logo()
 
 
 def data(user, cards, scores):
