@@ -84,7 +84,7 @@ def ready_to_play():
             break
         elif ready.lower() == 'n' or ready.lower() == 'no':
             clear_terminal()
-            game_over_text()
+            game_over_logo()
             break
         else:
             delay_print("Please enter a correct option...", 0)
