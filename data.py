@@ -124,16 +124,6 @@ def select_number_of_cards_for_game_text():
     delay_print("Pick the number of cards you would like...", 0)
 
 
-def computers_move_text():
-    """
-    Text for the computer's move
-    """
-    delay_print("Computer is thinking..", 2)
-    delay_print("Computer is thinking....", 2)
-    delay_print("Computer is thinking......\n", 2)
-    delay_print("The computer has completed it's move..\n", 2)
-
-
 def game_over_text():
     """
     Text for game over
