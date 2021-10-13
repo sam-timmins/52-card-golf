@@ -3,7 +3,8 @@ import statistics
 from utils import delay_print, clear_terminal
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, select_number_of_cards_for_game_text, SHEET
+    game_over_text, select_number_of_cards_for_game_text, SHEET, \
+    computer_jokes
 
 
 def pick_card_from_deck():
@@ -177,6 +178,20 @@ def computers_move():
     else:
         formatted_card >= computer_playing_cards[-1]
     computers_move_text()
+
+
+def computer_funny_joke():
+    """
+    Selects a joke, prints it out and then pops it from the dictionary
+    """
+    question_number = choice(list(computer_jokes))
+    delay_print("Quick joke while I take my move....", 2)
+    print()
+    delay_print(computer_jokes[question_number]["question"], 4)
+    print()
+    delay_print(computer_jokes[question_number]["answer"], 2)
+    print()
+    computer_jokes.pop(question_number)
 
 
 def swap_users_card():
