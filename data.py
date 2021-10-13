@@ -77,6 +77,7 @@ def select_number_of_cards_for_game_text():
     """
     Text for the number of cards
     """
+    clear_terminal()
     delay_print("Here we go.....", 2)
     print()
     delay_print("Pick the number of cards you would like...", 0)
