@@ -43,7 +43,8 @@ computer_jokes = {
     },
 
     "queston4": {
-        "question": "What do you get if you cross an elephant with a computer?",
+        "question": "What do you get if you cross an elephant with "
+                    "a computer?",
         "answer": "Bits of plastic all over the floor."
     },
 
@@ -58,7 +59,8 @@ computer_jokes = {
     },
 
     "queston7": {
-        "question": "How many computer programmers are needed to put in a light bulb?",
+        "question": "How many computer programmers are needed to put "
+                    "in a light bulb?",
         "answer": "None, it's a hardware issue."
     },
 
