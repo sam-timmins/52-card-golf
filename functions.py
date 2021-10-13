@@ -192,6 +192,7 @@ def computer_funny_joke():
     print()
     delay_print(computer_jokes[question_number]["answer"], 2)
     print()
+    delay_print("That's me done...", 2)
     computer_jokes.pop(question_number)
 
 
