@@ -220,3 +220,15 @@ def computers_move_logo():
 
 
     """)
+
+
+def game_button():
+    print("""
+
+          _____________________
+        /                       \ 
+       |    PLAY 52 CARD GOLF    |
+        \ _____________________ /
+
+
+    """)
