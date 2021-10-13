@@ -138,7 +138,8 @@ def game_over_text():
     """
     Text for game over
     """
-    game_over_logo()
+    clear_terminal()
+    print()
     delay_print("Totaling the scores...", 3)
     delay_print("Ready in...", 2)
     delay_print("3...", 1)
