@@ -117,17 +117,7 @@ def game_over_text():
     """
     Text for game over
     """
-    print("""
-           _____                         ____
-          / ____|                       / __ \ 
-         | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
-         | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
-         | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
-          \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
-
-
-          
-    """)
+    game_over_logo()
     delay_print("Totaling the scores...", 3)
     delay_print("Ready in...", 2)
     delay_print("3...", 1)
