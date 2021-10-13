@@ -259,7 +259,8 @@ def end_game():
         delay_print("It's a draw....", 2)
     print()
     delay_print("Have another game by hitting the button at the top!", 0)
-
+    game_button()
+    delay_print("", 2)
     game_over_logo()
 
 
