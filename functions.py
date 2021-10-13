@@ -78,7 +78,6 @@ def ready_to_play():
     """
     delay_print("Hit 'y' when you are ready to play", 0)
     ready = input()
-    
     while True:
         if ready.lower() == 'y' or ready.lower() == 'yes':
             clear_terminal()
