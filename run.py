@@ -285,13 +285,11 @@ def show_game_score_history():
     delay_print("___________________________ \n", 2)
 
 
-def main():
+def rounds_loop():
     """
-    The main game loop
+    Controls the number of rounds, depending on the users input
     """
     rounds = 1
-    pre_game_username()
-    user_game_total()
     number_of_rounds = number_of_cards - 1
     while rounds < number_of_rounds + 1:
         delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
@@ -299,6 +297,15 @@ def main():
         rounds += 1
         users_move()
         computers_move()
+
+
+def main():
+    """
+    The main game loop
+    """
+    pre_game_username()
+    user_game_total()
+    rounds_loop()
     end_game()
     update_worksheet(data(user_name, number_of_cards, user_score))
 
