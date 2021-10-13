@@ -200,7 +200,6 @@ def swap_users_card():
     correct entry.
     Displays updated user score
     """
-    delay_print(display_user_cards, 0)
     swap_card_number = input("  Card number: ")
     while swap_card_number:
         if swap_card_number.upper() in display_user_cards:
