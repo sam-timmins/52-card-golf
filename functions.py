@@ -56,6 +56,7 @@ def read_rules():
     while True:
         if read_rules.lower() == 'y' or read_rules.lower() == 'yes':
             print()
+            clear_terminal()
             game_rules()
             select_number_of_cards_for_game()
             break
