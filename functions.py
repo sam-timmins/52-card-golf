@@ -3,8 +3,7 @@ import statistics
 from utils import delay_print, clear_terminal
 from data import user_playing_cards, computer_playing_cards, \
     display_user_cards, the_deck, game_rules, logo, computers_move_text, \
-    game_over_text, select_number_of_cards_for_game_text, SHEET, \
-    game_over_logo
+    game_over_text, select_number_of_cards_for_game_text, SHEET
 
 
 def pick_card_from_deck():
