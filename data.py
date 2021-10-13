@@ -26,6 +26,59 @@ the_deck = [
     ]
 
 
+computer_jokes = {
+    "queston1": {
+        "question": "Why does the computer keep coughing?",
+        "answer": "It has a virus"
+    },
+
+    "queston2": {
+        "question": "How do you stop your laptop's charge running out?",
+        "answer": "You hide its trainers."
+    },
+
+    "queston3": {
+        "question": "How does a computer eat computer chips?",
+        "answer": "With mega-bytes."
+    },
+
+    "queston4": {
+        "question": "What do you get if you cross an elephant with a computer?",
+        "answer": "Bits of plastic all over the floor."
+    },
+
+    "queston5": {
+        "question": "Why was the computer late?",
+        "answer": "It had a hard drive."
+    },
+
+    "queston6": {
+        "question": "Why did the keyboards break up?",
+        "answer": "They weren't each other's type."
+    },
+
+    "queston7": {
+        "question": "How many computer programmers are needed to put in a light bulb?",
+        "answer": "None, it's a hardware issue."
+    },
+
+    "queston8": {
+        "question": "What do you call the woman who married the internet?",
+        "answer": "The wife-i."
+    },
+
+    "queston9": {
+        "question": "Have you seen the maths website?",
+        "answer": "Yes, it added a lot to my day."
+    },
+
+    "queston10": {
+        "question": "Where did the software developer go?",
+        "answer": "I don’t know, he ransomware!"
+    }
+}
+
+
 def game_rules():
     """
     Text for the rules of the game
