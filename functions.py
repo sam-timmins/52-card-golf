@@ -136,9 +136,6 @@ def deal_cards():
         computer_playing_cards.append(formatted_card)
     print()
     delay_print(f"{user_name}, lets deal...", 2)
-    print()
-    delay_print(f"These are your cards.... {display_user_cards}", 2)
-    delay_print(f"You're game total is: {user_game_total()}", 2)
 
 
 def users_move():
@@ -327,6 +324,8 @@ def rounds_loop():
     number_of_rounds = number_of_cards - 1
     while rounds < number_of_rounds + 1:
         delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
+        delay_print(f"These are your cards.... {display_user_cards}", 2)
+        delay_print(f"You're game total is: {user_game_total()}", 2)
         print()
         rounds += 1
         users_move()
