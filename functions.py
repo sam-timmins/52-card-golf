@@ -259,12 +259,7 @@ def end_game():
         delay_print("It's a draw....", 2)
     print()
     delay_print("Have another game by hitting the button at the top!", 0)
-    print("""
-          _____________________
-        /                       \ 
-       |    PLAY 52 CARD GOLF    |
-        \ _____________________ /
-    """)
+
     game_over_logo()
 
 
