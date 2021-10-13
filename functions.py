@@ -1,3 +1,4 @@
+from random import choice
 import random
 import statistics
 from utils import delay_print, clear_terminal
