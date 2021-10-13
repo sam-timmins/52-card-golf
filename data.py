@@ -115,3 +115,22 @@ def game_over_text():
     delay_print("2...", 1)
     delay_print("1...", 1)
     print()
+
+
+def rules_logo():
+    """
+    Logo for the read rules screen
+    """
+    print("""
+
+
+                     _____       _
+                    |  __ \     | |
+                    | |__) |   _| | ___  ___
+                    |  _  / | | | |/ _ \/ __|
+                    | | \ \ |_| | |  __/\__ \ 
+                    |_|  \_\__,_|_|\___||___/
+
+
+
+    """)
