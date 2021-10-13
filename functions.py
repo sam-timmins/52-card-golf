@@ -176,9 +176,8 @@ def computers_move():
     computer_playing_cards.sort()
     if formatted_card < computer_playing_cards[-1]:
         computer_playing_cards[-1] = formatted_card
-    else:
-        formatted_card >= computer_playing_cards[-1]
     clear_terminal()
+    computers_move_logo()
     computer_funny_joke()
     clear_terminal()
 
@@ -194,7 +193,7 @@ def computer_funny_joke():
     print()
     delay_print(computer_jokes[question_number]["answer"], 2)
     print()
-    delay_print("That's me done...", 2)
+    delay_print("That's me done...", 4)
     computer_jokes.pop(question_number)
 
 
