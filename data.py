@@ -60,25 +60,6 @@ def game_rules():
     delay_print("", 3)
 
 
-def logo():
-    """
-    Text for the game logo
-    """
-    print("""
-
-
-         _____ ___     _____              _    _____       _  __
-        | ____|__ \   / ____|            | |  / ____|     | |/ _|
-        | |__    ) | | |     __ _ _ __ __| | | |  __  ___ | | |_
-        |___ \  / /  | |    / _` | '__/ _` | | | |_ |/ _ \| |  _|
-         ___) |/ /_  | |___| (_| | | | (_| | | |__| | (_) | | |
-        |____/|____|  \_____\__,_|_|  \__,_|  \_____|\___/|_|_|
-
-
-
-         """)
-
-
 def select_number_of_cards_for_game_text():
     """
     Text for the number of cards
@@ -100,6 +81,38 @@ def computers_move_text():
     delay_print("The computer has completed it's move..\n", 2)
 
 
+def game_over_text():
+    """
+    Text for game over
+    """
+    game_over_logo()
+    delay_print("Totaling the scores...", 3)
+    delay_print("Ready in...", 2)
+    delay_print("3...", 1)
+    delay_print("2...", 1)
+    delay_print("1...", 1)
+    print()
+
+
+def logo():
+    """
+    Text for the game logo
+    """
+    print("""
+
+
+         _____ ___     _____              _    _____       _  __
+        | ____|__ \   / ____|            | |  / ____|     | |/ _|
+        | |__    ) | | |     __ _ _ __ __| | | |  __  ___ | | |_
+        |___ \  / /  | |    / _` | '__/ _` | | | |_ |/ _ \| |  _|
+         ___) |/ /_  | |___| (_| | | | (_| | | |__| | (_) | | |
+        |____/|____|  \_____\__,_|_|  \__,_|  \_____|\___/|_|_|
+
+
+
+         """)
+
+
 def game_over_logo():
     """
     Game over logo
@@ -117,19 +130,6 @@ def game_over_logo():
 
           
         """)
-
-
-def game_over_text():
-    """
-    Text for game over
-    """
-    game_over_logo()
-    delay_print("Totaling the scores...", 3)
-    delay_print("Ready in...", 2)
-    delay_print("3...", 1)
-    delay_print("2...", 1)
-    delay_print("1...", 1)
-    print()
 
 
 def rules_logo():
