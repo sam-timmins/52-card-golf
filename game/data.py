@@ -2,6 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from utils import delay_print, clear_terminal
 
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
