@@ -211,7 +211,7 @@ for {card_selection}", 2)
     user_playing_cards.clear()
     for i in display_user_cards:
         user_playing_cards.append(int(i[1:]))
-    delay_print(f"You're game total is: {user_game_total()}", 2)
+    delay_print(f"You're game total is: {user_game_total()}", 4)
     print()
 
 
