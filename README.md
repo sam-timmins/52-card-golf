@@ -214,10 +214,12 @@ If the user selects yes, the rules are gradually displayed giving the user plent
 
 The game begins properly with the selection of the number of cards the user would like to play with. Validation is applied here so the user can only select a number between 3 and 10 inclusive. anything outside of this will throw the input again. Whitespace on its own, letters and numbers outside of the required range will activate this. When the conditions have been met, the user may then progress.
 
-* Pick cards screen 
+* Pick cards screen
+
 ![Pick Cards](wireframes/game-pick-number-of-cards.jpg)
 
 * Validation check
+
 ![Validation Check](wireframes/game-pick-number-of-cards-validation.jpg)
 
 &nbsp;
