@@ -59,7 +59,7 @@ def read_rules():
         if rules.lower() == 'y' or rules.lower() == 'yes':
             print()
             clear_terminal()
-            """game_rules()"""
+            game_rules()
             ready_to_play()
             break
         elif rules.lower() == 'n' or rules.lower() == 'no':
