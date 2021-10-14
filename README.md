@@ -205,50 +205,49 @@ The user is prompted to enter their name to personalise the game. This is the fi
 
 The first choice by the user is to decide if they would like to read the rules of the game or not. Validation is applied here also where only: yes, y, no or n can be entered in either upper or lower case.
 
-If the user selects yes, the rules are gradually displayed giving the user plenty of time to read them, the game then begins.
+If the user selects yes, the rules are gradually displayed giving the user plenty of time to read them, when they are happy to carry on, they are prompted to continue. If the user decides that they do not want to read the rules, the game skips forward to begin the next feature.
 
 ![Game Rules](wireframes/game-rules-yes.jpg)
 
-If the user decides that they are happy with the rules, the game skips forward to begin the next feature.
-
-![Game Rules](wireframes/game-rules-no.jpg)
 
 &nbsp;
 
 The game begins properly with the selection of the number of cards the user would like to play with. Validation is applied here so the user can only select a number between 3 and 10 inclusive. anything outside of this will throw the input again. Whitespace on its own, letters and numbers outside of the required range will activate this. When the conditions have been met, the user may then progress.
 
+* Pick cards screen 
 ![Pick Cards](wireframes/game-pick-number-of-cards.jpg)
+
+* Validation check
+![Validation Check](wireframes/game-pick-number-of-cards-validation.jpg)
 
 &nbsp;
 
 The number of rounds is clearly shown to indicate to the user how far they are through the game. A card is picked from the deck and shown to the user, then they are given the option to swap the card or pass their go. there is also validation on the user's input here. The only options are: swap, s, pass or p, these options are not case sensitive either.
 
+If the user passes, then the game continues to the computers move.
+
 If the user decides that they would like to swap one of their cards, they are prompted to select one of their own. The choice is not case sensitive but must match one in their hand. When the card is swapped, the user is then displayed with their game total.
 
 ![Swap Move](wireframes/game-move-swap.jpg)
 
-If the user passes, then it moves to the computers move.
-
-![Pass Move](wireframes/game-move-pass.jpg)
 
 &nbsp;
 
-The computer's move is simply text set at small intervals to give the impression that the user is playing against someone needed thinking time.
+The computer's move screen has a logo included to clearly show the user what part of the game they are in. There is a different, very bad Dad joke, displayed for each time the computer takes its turn. When the move is over, the user is bought back to the *Rounds* screen.
 
-![Computer's MoveSam
-](wireframes/game-computer-move.jpg)
-
-&nbsp;
-
-When the rounds have been completed, the user is presented with the game over logo. This logo makes it very obvious that the game has been completed. The added extra of the count down also adds to the user experience of feeling that something is happening behind scenes, adding a small bit of tension. 
-
-![Game Over](wireframes/game-game-over.jpg)
+![Computer's MoveSam](wireframes/computers-move-screen.jpg)
 
 &nbsp;
 
-The results give feedback to the user on their scores and the results. Also, it encourages the user to play again and gives instruction on how to do so.
+When the rounds have been completed, the user is presented with the scores screen. The count down adds to the user experience of feeling that something is happening behind scenes, adding a small bit of tension. The results give feedback to the user on their scores and the results. Also, it encourages the user to play again and gives instruction on how to do so.
 
-![End Game Results](wireframes/game-end-game-stats.jpg)
+![Game Over](wireframes/end-game-screen.jpg)
+
+&nbsp;
+
+Finally the user is then presented with the game over logo.
+
+![Game Over Screen](wireframes/game-over-screen.jpg)
 
 &nbsp;
 
