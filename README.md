@@ -113,7 +113,7 @@ The colour scheme is based on the red felt from a poker table. I used  [Colourmi
 
 ### Images
 
-I haven't used any images for this game, however, to make the start and end of the game jump out a little more, I used [patorjk.com](https://patorjk.com/software/taag/#p=display&h=1&f=Big&t=52%20Card%20Golf%0A) with the font set ti *Big* to create giant text that would appear as an image within the terminal.
+I haven't used any images for this game, however, to make the start and end of the game jump out a little more, I used [patorjk.com](https://patorjk.com/software/taag/#p=display&h=1&f=Big&t=52%20Card%20Golf%0A) with the font set to *Big* to create giant text that would appear as an image within the terminal.
 
 \
 &nbsp;
