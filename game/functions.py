@@ -19,6 +19,7 @@ def pre_game_username():
     delay_print("Please enter your name to begin", 0)
     user_name = input('  ')
     user_name = user_name.strip()
+    
     while True:
         if (len(user_name)) == 0:
             user_name = input('  Please enter your name: ')
@@ -36,6 +37,7 @@ def read_rules():
     print()
     rules = input(f'  Hi {user_name}, would you like to read the rules '
                   'of the game?\n  yes or no: ')
+    
     while True:
         if rules.lower() == 'y' or rules.lower() == 'yes':
             print()
@@ -59,6 +61,7 @@ def ready_to_play():
     """
     delay_print("Hit 'enter' when you are ready to play", 0)
     ready = input()
+    
     while True:
         if ready == '':
             clear_terminal()
@@ -147,6 +150,7 @@ def users_move():
     print()
     delay_print("What's your next move?", 0)
     swap_or_not = input("  swap ('s') or pass ('p'): ")
+    
     while True:
         if swap_or_not.lower() == 'swap' or swap_or_not.lower() == 's':
             print()
@@ -168,6 +172,7 @@ def swap_users_card():
     Displays updated user score
     """
     swap_card_number = input("  Card number: ")
+    
     while swap_card_number:
         if swap_card_number.upper() in display_user_cards:
             delay_print(f"Swapping {swap_card_number.upper()} \
@@ -178,8 +183,10 @@ for {card_selection}", 2)
         else:
             swap_card_number = input("  Card number: ")
     user_playing_cards.clear()
+    
     for i in display_user_cards:
         user_playing_cards.append(int(i[1:]))
+    
     delay_print(f"You're game total is: {user_game_total()}", 4)
     print()
 
@@ -192,8 +199,10 @@ def computers_move():
     pick_card_from_deck()
     format_card_to_int()
     computer_playing_cards.sort()
+    
     if formatted_card < computer_playing_cards[-1]:
         computer_playing_cards[-1] = formatted_card
+    
     clear_terminal()
     computers_move_logo()
     computer_funny_joke()
@@ -213,7 +222,6 @@ def computer_funny_joke():
     print()
     delay_print("That's me done...", 4)
     computer_jokes.pop(question_number)
-
 
 
 def user_game_total():
@@ -239,6 +247,7 @@ def rounds_loop():
     """
     rounds = 1
     number_of_rounds = number_of_cards - 1
+    
     while rounds < number_of_rounds + 1:
         clear_terminal()
         print()
@@ -266,12 +275,14 @@ def end_game():
     print()
     delay_print(f"Computer's total was {computer_score}", 2)
     print()
+    
     if user_score < computer_score:
         delay_print("Great job, you're the winner!", 2)
     elif user_score > computer_score:
         delay_print("Unlucky, the computer wins!", 2)
     else:
         delay_print("It's a draw....", 2)
+    
     print()
     delay_print("Have another game by hitting the button at the top!", 0)
     game_button()
@@ -320,8 +331,10 @@ def show_game_score_history():
     delay_print("", 1)
 
     number_of_cards_played_list = []
+    
     for data in score_data:
         number_of_cards_played_list.append(data[1])
+    
     num_only = number_of_cards_played_list[1:]
     convert_to_num = [int(i) for i in num_only]
     average = sum(convert_to_num) / len(convert_to_num)
