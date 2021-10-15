@@ -8,25 +8,6 @@ from .data import user_playing_cards, computer_playing_cards, \
     computer_jokes, computers_move_logo, game_over_logo, game_button
 
 
-def pick_card_from_deck():
-    """
-    Selects a random card from the deck and removes it from the deck
-    """
-    global card_selection
-    card_selection = random.choice(the_deck)
-    the_deck.remove(card_selection)
-
-
-def format_card_to_int():
-    """
-    Strips out the number from card selected from the deck and
-    converts the string to an integer
-    """
-    global formatted_card
-    number_only = card_selection[1:]
-    formatted_card = int(number_only)
-
-
 def pre_game_username():
     """
     Requests user to enter name with validation on blank entry
@@ -113,6 +94,25 @@ def select_number_of_cards_for_game():
                                     "between 3 and 10 inclusive: ")
 
 
+def pick_card_from_deck():
+    """
+    Selects a random card from the deck and removes it from the deck
+    """
+    global card_selection
+    card_selection = random.choice(the_deck)
+    the_deck.remove(card_selection)
+
+
+def format_card_to_int():
+    """
+    Strips out the number from card selected from the deck and
+    converts the string to an integer
+    """
+    global formatted_card
+    number_only = card_selection[1:]
+    formatted_card = int(number_only)
+
+
 def deal_cards():
     """
     Randomly selects hand of cards from the_deck list and adds them to
@@ -161,6 +161,29 @@ def users_move():
                                 "'s' or 'p':")
 
 
+def swap_users_card():
+    """
+    Swaps the user's card depending on their choice with validation for a
+    correct entry.
+    Displays updated user score
+    """
+    swap_card_number = input("  Card number: ")
+    while swap_card_number:
+        if swap_card_number.upper() in display_user_cards:
+            delay_print(f"Swapping {swap_card_number.upper()} \
+for {card_selection}", 2)
+            display_user_cards.remove(swap_card_number.upper())
+            display_user_cards.insert(0, card_selection)
+            break
+        else:
+            swap_card_number = input("  Card number: ")
+    user_playing_cards.clear()
+    for i in display_user_cards:
+        user_playing_cards.append(int(i[1:]))
+    delay_print(f"You're game total is: {user_game_total()}", 4)
+    print()
+
+
 def computers_move():
     """
     Picks and formats a card from the_deck. Changes the highest number in
@@ -192,28 +215,6 @@ def computer_funny_joke():
     computer_jokes.pop(question_number)
 
 
-def swap_users_card():
-    """
-    Swaps the user's card depending on their choice with validation for a
-    correct entry.
-    Displays updated user score
-    """
-    swap_card_number = input("  Card number: ")
-    while swap_card_number:
-        if swap_card_number.upper() in display_user_cards:
-            delay_print(f"Swapping {swap_card_number.upper()} \
-for {card_selection}", 2)
-            display_user_cards.remove(swap_card_number.upper())
-            display_user_cards.insert(0, card_selection)
-            break
-        else:
-            swap_card_number = input("  Card number: ")
-    user_playing_cards.clear()
-    for i in display_user_cards:
-        user_playing_cards.append(int(i[1:]))
-    delay_print(f"You're game total is: {user_game_total()}", 4)
-    print()
-
 
 def user_game_total():
     """
@@ -230,6 +231,26 @@ def computer_game_total():
     """
     computer_game_total = sum(computer_playing_cards)
     return computer_game_total
+
+
+def rounds_loop():
+    """
+    Controls the number of rounds, depending on the users input
+    """
+    rounds = 1
+    number_of_rounds = number_of_cards - 1
+    while rounds < number_of_rounds + 1:
+        clear_terminal()
+        print()
+        delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
+        print()
+        print()
+        delay_print(f"These are your cards.... {display_user_cards}", 2)
+        delay_print(f"You're game total is: {user_game_total()}", 2)
+        print()
+        rounds += 1
+        users_move()
+        computers_move()
 
 
 def end_game():
@@ -312,26 +333,6 @@ def show_game_score_history():
     delay_print(f"The most common number of cards played with is {mode_card} "
                 "\n", 2)
     delay_print("___________________________ \n", 2)
-
-
-def rounds_loop():
-    """
-    Controls the number of rounds, depending on the users input
-    """
-    rounds = 1
-    number_of_rounds = number_of_cards - 1
-    while rounds < number_of_rounds + 1:
-        clear_terminal()
-        print()
-        delay_print(f"Round: {rounds} of {number_of_rounds}", 2)
-        print()
-        print()
-        delay_print(f"These are your cards.... {display_user_cards}", 2)
-        delay_print(f"You're game total is: {user_game_total()}", 2)
-        print()
-        rounds += 1
-        users_move()
-        computers_move()
 
 
 def main():
