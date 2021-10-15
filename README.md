@@ -372,11 +372,11 @@ From this testing, I implemented the changes that were recommended as they were 
 
 ## Code Validation
 
-Using the [PEP8](http://pep8online.com/ "PEP8") code validator for the Python code, I have two errors of trailing whitespace. Both are within my images, where they are needed to prevent a styling issue following a backslash. I decided to leave these errors in as removing them would destroy the look of the game.
+Using the [PEP8](http://pep8online.com/ "PEP8") code validator for the Python code, I have several errors of trailing whitespace. The errors are within the data file and related to the images, where they are needed to prevent a styling issue following a backslash. I decided to leave these errors in as removing them would destroy the look of the game.
 
-![run](wireframes/warning-run.jpg)
+&nbsp;
 
-![data](wireframes/warning-data.jpg)
+![data](wireframes/pep8-data.jpg)
 
 \
 &nbsp; 
