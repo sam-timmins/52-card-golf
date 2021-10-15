@@ -1,5 +1,5 @@
 # 52 Card Golf
-![52 Card Opening Screen](wireframes/screen-shot-of-intro.jpg)
+![52 Card Opening Screen](wireframes/features-images/screen-shot-of-intro.jpg)
 
 # Goal for this Project
 This project will be a text-based python game where the user has to beat the computer using a little skill but an extraordinary amount of pure luck!! For the user to win the game, they must tactfully swap their cards to create a cumulative score that is lower than the computer.
@@ -173,32 +173,32 @@ The first feature that is present in the game is the game button. This resets th
 
 * Start game button
 
-![Start Game Button](wireframes/start-game-button.jpg) 
+![Start Game Button](wireframes/features-images/start-game-button.jpg) 
 
 
 * Start game button in an active state
 
-![Start Game Button](wireframes/start-game-button-active.jpg)
+![Start Game Button](wireframes/features-images/start-game-button-active.jpg)
 
 &nbsp;
 
 The game logo follows along with the creator's name. The design of the logo is in clear and easily read text.
 
-![Game logo](wireframes/game-logo.jpg)
+![Game logo](wireframes/features-images/game-logo.jpg)
 
 
 &nbsp;
 
 The previous game statistics inform the user of the last game that was played. The information given is pulled from a Google Sheets document and gives the last players name, the number of cards they played with and their score. Alongside this is information to help the user choose an option that is the most popular game setting.
 
-![Start Game Stats](wireframes/game-stats.jpg)
+![Start Game Stats](wireframes/features-images/game-stats.jpg)
 
 
 &nbsp;
 
 The user is prompted to enter their name to personalise the game. This is the first instance where validation takes place as there is no way to proceed unless some text is entered. Whitespace does not count and will prompt again for a name to be entered.
 
-![Enter Name](wireframes/game-enter-name.jpg)
+![Enter Name](wireframes/features-images/game-enter-name.jpg)
 
 
 &nbsp;
@@ -207,7 +207,7 @@ The first choice by the user is to decide if they would like to read the rules o
 
 If the user selects yes, the rules are gradually displayed giving the user plenty of time to read them, when they are happy to carry on, they are prompted to continue. If the user decides that they do not want to read the rules, the game skips forward to begin the next feature.
 
-![Game Rules](wireframes/game-rules-yes.jpg)
+![Game Rules](wireframes/features-images/game-rules-yes.jpg)
 
 
 &nbsp;
@@ -216,11 +216,11 @@ The game begins properly with the selection of the number of cards the user woul
 
 * Pick cards screen
 
-![Pick Cards](wireframes/game-pick-number-of-cards.jpg)
+![Pick Cards](wireframes/features-images/game-pick-number-of-cards.jpg)
 
 * Validation check
 
-![Validation Check](wireframes/game-pick-number-of-cards-validation.jpg)
+![Validation Check](wireframes/features-images/game-pick-number-of-cards-validation.jpg)
 
 &nbsp;
 
@@ -230,26 +230,26 @@ If the user passes, then the game continues to the computers move.
 
 If the user decides that they would like to swap one of their cards, they are prompted to select one of their own. The choice is not case sensitive but must match one in their hand. When the card is swapped, the user is then displayed with their game total.
 
-![Swap Move](wireframes/game-move-swap.jpg)
+![Swap Move](wireframes/features-images/game-move-swap.jpg)
 
 
 &nbsp;
 
 The computer's move screen has a logo included to clearly show the user what part of the game they are in. There is a different, very bad Dad joke, displayed for each time the computer takes its turn. When the move is over, the user is bought back to the *Rounds* screen.
 
-![Computer's MoveSam](wireframes/computers-move-screen.jpg)
+![Computer's MoveSam](wireframes/features-images/computers-move-screen.jpg)
 
 &nbsp;
 
 When the rounds have been completed, the user is presented with the scores screen. The count down adds to the user experience of feeling that something is happening behind scenes, adding a small bit of tension. The results give feedback to the user on their scores and the results. Also, it encourages the user to play again and gives instruction on how to do so.
 
-![Game Over](wireframes/end-game-screen.jpg)
+![Game Over](wireframes/features-images/end-game-screen.jpg)
 
 &nbsp;
 
 Finally the user is then presented with the game over logo.
 
-![Game Over Screen](wireframes/game-over-screen.jpg)
+![Game Over Screen](wireframes/features-images/game-over-screen.jpg)
 
 &nbsp;
 
