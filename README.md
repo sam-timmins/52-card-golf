@@ -127,7 +127,7 @@ The structure of this project has been mapped out using [Lucid](https://lucid.co
 
 \
 &nbsp;
-![Begining of game flow](wireframes/flow-key.jpg)
+![Begining of game flow](wireframes/structure-images/flow-key.jpg)
 \
 &nbsp;
 
@@ -135,7 +135,7 @@ This then allowed me to walk through the project in my head and work out the lin
 
 \
 &nbsp;
-![Begining of game flow](wireframes/begining-of-game-flow-chart.jpg)
+![Begining of game flow](wireframes/structure-images/begining-of-game-flow-chart.jpg)
 \
 &nbsp;
 
@@ -143,7 +143,7 @@ Once this was completed, I could focus on the game itself. I broke it down into 
 
 \
 &nbsp;
-![Begining of game flow](wireframes/game-flow-chart.jpg)
+![Begining of game flow](wireframes/structure-images/game-flow-chart.jpg)
 \
 &nbsp;
 
