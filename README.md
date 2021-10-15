@@ -123,7 +123,7 @@ I haven't used any images for this game, however, to make the start and end of t
 ![Game Over](wireframes/images/end-image.jpg "Game Over")
 
 ### Structure
-The structure of this project has been mapped out using [Lucid](https://lucid.co/ "Lucid"). Using the preformed shapes in [Lucid](https://lucid.co/ "Lucid"), I created my key of shapes.
+The structure of this project has been mapped out using [Lucid](https://lucid.co/"target="_blank "Lucid"). Using the preformed shapes in [Lucid](https://lucid.co/"target="_blank "Lucid"), I created my key of shapes.
 
 \
 &nbsp;
