@@ -103,7 +103,7 @@ This project will be a text-based python game where the user has to beat the com
 ## Design Choices
 ### Fonts
 
-The terminal that was provided by Code Institute to complete this project, used a standard monospace font. In order to keep the theme running through the game, I decided to change the font of the button to the [Courier New](https://en.wikipedia.org/wiki/Courier_(typeface) "Courier New") font. This fits in with the terminal and joins the elements up nicely.
+The terminal that was provided by Code Institute to complete this project, used a standard monospace font. In order to keep the theme running through the game, I decided to change the font of the button to the [Courier New](https://en.wikipedia.org/wiki/Courier_(typeface)"target="_blank "Courier New") font. This fits in with the terminal and joins the elements up nicely.
 
 ### Colours
 
