@@ -390,7 +390,7 @@ I had several bugs in the building process, mostly due to the validations of the
 
 * Another issue relating to choosing the number of cards was in the users move function. I spent a very long time trying to work out why I wasn't breaking out of the loop in the select number of cards function and it kept asking me to input 'Must be between 3 and 10 inclusive:'. This should have been a simple fix, as my break was working I had just missed out on a 'return' in the user move function. I wasted a lot of time here, lesson learnt!
 
-* The major issue that I had was again due to a lack of complete understanding of the API process with Heroku. I managed to push my creds.json file to GitHub and caused Google to get in contact with me over a [violation](wireframes/google-violation.jpg "Google Violation"). I rectified this by closing it down and then creating a new API and completing the process correctly.
+* The major issue that I had was again due to a lack of complete understanding of the API process with Heroku. I managed to push my creds.json file to GitHub and caused Google to get in contact with me over a [violation](wireframes/google-doc-images/google-violation.jpg "Google Violation"). I rectified this by closing it down and then creating a new API and completing the process correctly.
 
 ## Unfixed Bugs
 
