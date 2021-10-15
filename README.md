@@ -1,5 +1,5 @@
 # 52 Card Golf
-![52 Card Opening Screen](wireframes/features-images/screen-shot-of-intro.jpg)
+![52 Card Opening Screen](wireframes/screen-views.jpg)
 
 # Goal for this Project
 This project will be a text-based python game where the user has to beat the computer using a little skill but an extraordinary amount of pure luck!! For the user to win the game, they must tactfully swap their cards to create a cumulative score that is lower than the computer.
