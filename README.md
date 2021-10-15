@@ -255,7 +255,7 @@ Finally the user is then presented with the game over logo.
 
 It is at this point that the Google Sheets document is updated. The user name, the number of cards that they played with and also their score are saved. The entries here feed the game stats at the beginning of a new game.
 
-![Google Sheets](wireframes/google-sheets.jpg)
+![Google Sheets](wireframes/google-doc-images/google-sheets.jpg)
 
 &nbsp;
 
