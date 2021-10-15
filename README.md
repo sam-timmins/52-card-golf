@@ -324,6 +324,7 @@ I then gave them the simple task of 'Complete the game, playing with 3 cards'. I
 | 42  | Advanced        | Yes            | Show me some game statistics so I can base my game on what others have played
 | 76  | Moderate        | Yes            | Space out the rules text to make it easier to read
 | 78  | None            | Yes            | I don't like computers, I'm going outside again
+|  ?  | Advanced        | Yes            | Clear the terminal to create screens, rules, start game etc. Add a random saying while the computer is making its move. Let the user decide when they are happy with the rules and then continue to the game.
 
 &nbsp;
 
