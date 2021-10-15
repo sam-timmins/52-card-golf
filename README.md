@@ -117,10 +117,10 @@ I haven't used any images for this game, however, to make the start and end of t
 
 \
 &nbsp;
-![52 Card Golf](wireframes/opening-image.jpg "52 Card Golf")
-![Rules](wireframes/rules-image.jpg "Rules")
-![My Move](wireframes/my-move-image.jpg "My Move")
-![Game Over](wireframes/end-image.jpg "Game Over")
+![52 Card Golf](wireframes/images/opening-image.jpg "52 Card Golf")
+![Rules](wireframes/images/rules-image.jpg "Rules")
+![My Move](wireframes/images/my-move-image.jpg "My Move")
+![Game Over](wireframes/images/end-image.jpg "Game Over")
 
 ### Structure
 The structure of this project has been mapped out using [Lucid](https://lucid.co/ "Lucid"). Using the preformed shapes in [Lucid](https://lucid.co/ "Lucid"), I created my key of shapes.
