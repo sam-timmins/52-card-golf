@@ -107,7 +107,7 @@ The terminal that was provided by Code Institute to complete this project, used 
 
 ### Colours
 
-The colour scheme is based on the red felt from a poker table. I used  [Colourmind](http://colormind.io/) and initially picked the red that I was looking for. I generated a set of colours, and it created a five colour pallet that can be seen [here](wireframes/colours-images/generated-colour-scheme.jpg). Colourmind generated an off white that was a perfect contrast match with my red, the results of that can be seen [here](wireframes/colours-images/contrast-checker.jpg) . My final colour scheme is below.
+The colour scheme is based on the red felt from a poker table. I used  [Colourmind](http://colormind.io/"target="_blank "Colourmind") and initially picked the red that I was looking for. I generated a set of colours, and it created a five colour pallet that can be seen [here](wireframes/colours-images/generated-colour-scheme.jpg). Colourmind generated an off white that was a perfect contrast match with my red, the results of that can be seen [here](wireframes/colours-images/contrast-checker.jpg) . My final colour scheme is below.
 
 ![Colour Scheme](wireframes/colours-images/colour-scheme.jpg "Colour Scheme")
 
