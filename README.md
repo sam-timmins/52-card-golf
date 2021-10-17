@@ -459,7 +459,10 @@ The project repository was created using the *Code-Institute-Org/python-essentia
 * Make sure that the HTTPS tab is selected
 * Click on the **Copy** button to the right of the URL
 * Open a new GitPod workspace
-* In the terminal type *git clone (paste the URL here)* and then press enter
+* In the terminal type the following code and then press enter
+```
+git clone https://github.com/sam-timmins/52-card-golf.git
+```
 * The repo will now be downloaded and cloned
 * Open your [GitPod workspaces](https://gitpod.io/workspaces "GitPod workspaces")
 * Select the three dots to the right-hand side of your workspace and select **Pin**
@@ -485,9 +488,13 @@ The project repository was created using the *Code-Institute-Org/python-essentia
 * Go back to your workspace
 * Open the file *gitignore*
 * Add *creds.json* to the bottom of the list and save the file *(Ctrl + S)*
-* In the terminal in your workspace, type:
+* In the terminal in your workspace, type the following and then press enter:
 ```
 git add .
+
+```
+* In the terminal then, type the following and then press enter:
+```
 git status
 
 ```
